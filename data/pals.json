@@ -1,0 +1,5194 @@
+{
+  "meta": {
+    "game": "Palworld",
+    "steamBuildId": "25247047",
+    "extractedAt": "2026-09-15T04:58:13.3246082+00:00",
+    "generatedAt": "2026-10-30T01:05:45.170Z",
+    "count": 289,
+    "sources": [
+      {
+        "name": "palworld-atlas-data",
+        "url": "https://github.com/Awy64/palworld-atlas-data",
+        "license": "MIT, Copyright (c) 2026 Adam Young"
+      },
+      {
+        "name": "palworld-knowledge",
+        "url": "https://github.com/GGarnize/palworld-knowledge",
+        "license": "MIT, Copyright (c) 2026 GGarnize"
+      }
+    ],
+    "notice": "Palworld and all Pal names are the property of Pocketpair, Inc."
+  },
+  "pals": [
+    {
+      "id": "SheepBall",
+      "slug": "lamball",
+      "name": "Lamball",
+      "paldeckNumber": 1,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 3050,
+      "rarity": 1,
+      "workSuitability": {
+        "handiwork": 1,
+        "transporting": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "PinkCat",
+      "slug": "cattiva",
+      "name": "Cattiva",
+      "paldeckNumber": 2,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2760,
+      "rarity": 1,
+      "workSuitability": {
+        "handiwork": 1,
+        "gathering": 1,
+        "mining": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "ChickenPal",
+      "slug": "chikipi",
+      "name": "Chikipi",
+      "paldeckNumber": 3,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 3080,
+      "rarity": 1,
+      "workSuitability": {
+        "gathering": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Carbunclo",
+      "slug": "lifmunk",
+      "name": "Lifmunk",
+      "paldeckNumber": 4,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 3020,
+      "rarity": 1,
+      "workSuitability": {
+        "planting": 1,
+        "handiwork": 1,
+        "gathering": 1,
+        "lumbering": 1,
+        "medicineProduction": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "BluePlatypus",
+      "slug": "fuack",
+      "name": "Fuack",
+      "paldeckNumber": 5,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2980,
+      "rarity": 1,
+      "workSuitability": {
+        "watering": 1,
+        "handiwork": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "BluePlatypus_Fire",
+      "slug": "fuack-ignis",
+      "name": "Fuack Ignis",
+      "paldeckNumber": 5,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "fire"
+      ],
+      "breedingPower": 2300,
+      "rarity": 2,
+      "workSuitability": {
+        "kindling": 2,
+        "watering": 2,
+        "handiwork": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "CuteFox",
+      "slug": "vixy",
+      "name": "Vixy",
+      "paldeckNumber": 6,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 3060,
+      "rarity": 2,
+      "workSuitability": {
+        "gathering": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "FlyingManta",
+      "slug": "celaray",
+      "name": "Celaray",
+      "paldeckNumber": 7,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2740,
+      "rarity": 3,
+      "workSuitability": {
+        "watering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "FlyingManta_Thunder",
+      "slug": "celaray-lux",
+      "name": "Celaray Lux",
+      "paldeckNumber": 7,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "electric"
+      ],
+      "breedingPower": 2380,
+      "rarity": 4,
+      "workSuitability": {
+        "watering": 1,
+        "generatingElectricity": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "WoolFox",
+      "slug": "cremis",
+      "name": "Cremis",
+      "paldeckNumber": 8,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2890,
+      "rarity": 1,
+      "workSuitability": {
+        "gathering": 1,
+        "farming": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "KendoFrog",
+      "slug": "croajiro",
+      "name": "Croajiro",
+      "paldeckNumber": 9,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2600,
+      "rarity": 4,
+      "workSuitability": {
+        "watering": 1,
+        "handiwork": 1,
+        "gathering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "KendoFrog_Dark",
+      "slug": "croajiro-noct",
+      "name": "Croajiro Noct",
+      "paldeckNumber": 9,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "dark"
+      ],
+      "breedingPower": 1860,
+      "rarity": 5,
+      "workSuitability": {
+        "watering": 1,
+        "handiwork": 2,
+        "gathering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "LeafMomonga",
+      "slug": "herbil",
+      "name": "Herbil",
+      "paldeckNumber": 10,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "neutral"
+      ],
+      "breedingPower": 2630,
+      "rarity": 3,
+      "workSuitability": {
+        "planting": 1,
+        "gathering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Ganesha",
+      "slug": "teafant",
+      "name": "Teafant",
+      "paldeckNumber": 11,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 3070,
+      "rarity": 1,
+      "workSuitability": {
+        "watering": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "PlantSlime",
+      "slug": "gumoss",
+      "name": "Gumoss",
+      "paldeckNumber": 12,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "ground"
+      ],
+      "breedingPower": 2950,
+      "rarity": 1,
+      "workSuitability": {
+        "planting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "PlantSlime_Flower",
+      "slug": "gumoss-flower",
+      "name": "Gumoss (Flower)",
+      "paldeckNumber": 12,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "ground"
+      ],
+      "breedingPower": 2950,
+      "rarity": 10,
+      "workSuitability": {
+        "planting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "SamuraiDog",
+      "slug": "pupperai",
+      "name": "Pupperai",
+      "paldeckNumber": 13,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 2930,
+      "rarity": 2,
+      "workSuitability": {
+        "gathering": 1,
+        "lumbering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "CloverFairy",
+      "slug": "clovee",
+      "name": "Clovee",
+      "paldeckNumber": 14,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "neutral"
+      ],
+      "breedingPower": 2970,
+      "rarity": 2,
+      "workSuitability": {
+        "planting": 1,
+        "gathering": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Hedgehog",
+      "slug": "jolthog",
+      "name": "Jolthog",
+      "paldeckNumber": 15,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 3030,
+      "rarity": 1,
+      "workSuitability": {
+        "generatingElectricity": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Hedgehog_Ice",
+      "slug": "jolthog-cryst",
+      "name": "Jolthog Cryst",
+      "paldeckNumber": 15,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 2850,
+      "rarity": 2,
+      "workSuitability": {
+        "cooling": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "NegativeKoala",
+      "slug": "depresso",
+      "name": "Depresso",
+      "paldeckNumber": 16,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 3000,
+      "rarity": 1,
+      "workSuitability": {
+        "handiwork": 1,
+        "mining": 1,
+        "transporting": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Penguin",
+      "slug": "pengullet",
+      "name": "Pengullet",
+      "paldeckNumber": 17,
+      "paldeckSuffix": null,
+      "elements": [
+        "water",
+        "ice"
+      ],
+      "breedingPower": 2960,
+      "rarity": 1,
+      "workSuitability": {
+        "watering": 1,
+        "handiwork": 1,
+        "cooling": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Penguin_Electric",
+      "slug": "pengullet-lux",
+      "name": "Pengullet Lux",
+      "paldeckNumber": 17,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "electric"
+      ],
+      "breedingPower": 2490,
+      "rarity": 2,
+      "workSuitability": {
+        "watering": 1,
+        "generatingElectricity": 2,
+        "handiwork": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "CaptainPenguin",
+      "slug": "penking",
+      "name": "Penking",
+      "paldeckNumber": 18,
+      "paldeckSuffix": null,
+      "elements": [
+        "water",
+        "ice"
+      ],
+      "breedingPower": 2070,
+      "rarity": 6,
+      "workSuitability": {
+        "watering": 2,
+        "handiwork": 2,
+        "mining": 3,
+        "cooling": 2,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "CaptainPenguin_Black",
+      "slug": "penking-lux",
+      "name": "Penking Lux",
+      "paldeckNumber": 18,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "electric"
+      ],
+      "breedingPower": 1850,
+      "rarity": 7,
+      "workSuitability": {
+        "watering": 2,
+        "generatingElectricity": 3,
+        "handiwork": 2,
+        "mining": 3,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "WizardOwl",
+      "slug": "hoocrates",
+      "name": "Hoocrates",
+      "paldeckNumber": 19,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2940,
+      "rarity": 1,
+      "workSuitability": {
+        "gathering": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Alpaca",
+      "slug": "melpaca",
+      "name": "Melpaca",
+      "paldeckNumber": 20,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2720,
+      "rarity": 3,
+      "workSuitability": {
+        "farming": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "KingAlpaca",
+      "slug": "kingpaca",
+      "name": "Kingpaca",
+      "paldeckNumber": 21,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2220,
+      "rarity": 8,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "KingAlpaca_Ice",
+      "slug": "kingpaca-cryst",
+      "name": "Kingpaca Cryst",
+      "paldeckNumber": 21,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 1530,
+      "rarity": 9,
+      "workSuitability": {
+        "gathering": 2,
+        "cooling": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "DreamDemon",
+      "slug": "daedream",
+      "name": "Daedream",
+      "paldeckNumber": 22,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2910,
+      "rarity": 1,
+      "workSuitability": {
+        "handiwork": 1,
+        "gathering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Monkey",
+      "slug": "tanzee",
+      "name": "Tanzee",
+      "paldeckNumber": 23,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2900,
+      "rarity": 1,
+      "workSuitability": {
+        "planting": 1,
+        "handiwork": 1,
+        "gathering": 1,
+        "lumbering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Monkey_Fire",
+      "slug": "tanzee-ignis",
+      "name": "Tanzee Ignis",
+      "paldeckNumber": 23,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2830,
+      "rarity": 2,
+      "workSuitability": {
+        "kindling": 1,
+        "handiwork": 1,
+        "lumbering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "NightFox",
+      "slug": "nox",
+      "name": "Nox",
+      "paldeckNumber": 24,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2920,
+      "rarity": 6,
+      "workSuitability": {
+        "gathering": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "LavaGirl",
+      "slug": "flambelle",
+      "name": "Flambelle",
+      "paldeckNumber": 25,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2700,
+      "rarity": 1,
+      "workSuitability": {
+        "kindling": 1,
+        "handiwork": 1,
+        "transporting": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "FlameBambi",
+      "slug": "rooby",
+      "name": "Rooby",
+      "paldeckNumber": 26,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2870,
+      "rarity": 2,
+      "workSuitability": {
+        "kindling": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Bastet",
+      "slug": "mau",
+      "name": "Mau",
+      "paldeckNumber": 27,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 3040,
+      "rarity": 1,
+      "workSuitability": {
+        "gathering": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Bastet_Ice",
+      "slug": "mau-cryst",
+      "name": "Mau Cryst",
+      "paldeckNumber": 27,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 2750,
+      "rarity": 2,
+      "workSuitability": {
+        "cooling": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Boar",
+      "slug": "rushoar",
+      "name": "Rushoar",
+      "paldeckNumber": 28,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 2880,
+      "rarity": 1,
+      "workSuitability": {
+        "mining": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Kitsunebi",
+      "slug": "foxparks",
+      "name": "Foxparks",
+      "paldeckNumber": 29,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2990,
+      "rarity": 1,
+      "workSuitability": {
+        "kindling": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Kitsunebi_Ice",
+      "slug": "foxparks-cryst",
+      "name": "Foxparks Cryst",
+      "paldeckNumber": 29,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 2500,
+      "rarity": 1,
+      "workSuitability": {
+        "cooling": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "NegativeOctopus",
+      "slug": "killamari",
+      "name": "Killamari",
+      "paldeckNumber": 30,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "water"
+      ],
+      "breedingPower": 2770,
+      "rarity": 1,
+      "workSuitability": {
+        "watering": 1,
+        "gathering": 1,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "NegativeOctopus_Neutral",
+      "slug": "killamari-primo",
+      "name": "Killamari Primo",
+      "paldeckNumber": 30,
+      "paldeckSuffix": "B",
+      "elements": [
+        "neutral",
+        "water"
+      ],
+      "breedingPower": 2540,
+      "rarity": 2,
+      "workSuitability": {
+        "watering": 1,
+        "gathering": 1,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "CuteMole",
+      "slug": "fuddler",
+      "name": "Fuddler",
+      "paldeckNumber": 31,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 2790,
+      "rarity": 1,
+      "workSuitability": {
+        "handiwork": 1,
+        "mining": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Deer",
+      "slug": "eikthyrdeer",
+      "name": "Eikthyrdeer",
+      "paldeckNumber": 32,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2710,
+      "rarity": 5,
+      "workSuitability": {
+        "lumbering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Deer_Ground",
+      "slug": "eikthyrdeer-terra",
+      "name": "Eikthyrdeer Terra",
+      "paldeckNumber": 32,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 2580,
+      "rarity": 6,
+      "workSuitability": {
+        "lumbering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Garm",
+      "slug": "direhowl",
+      "name": "Direhowl",
+      "paldeckNumber": 33,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2680,
+      "rarity": 2,
+      "workSuitability": {
+        "gathering": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "BerryGoat",
+      "slug": "caprity",
+      "name": "Caprity",
+      "paldeckNumber": 34,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2610,
+      "rarity": 3,
+      "workSuitability": {
+        "planting": 2,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "BerryGoat_Dark",
+      "slug": "caprity-noct",
+      "name": "Caprity Noct",
+      "paldeckNumber": 34,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1940,
+      "rarity": 3,
+      "workSuitability": {
+        "planting": 2,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "MopBaby",
+      "slug": "swee",
+      "name": "Swee",
+      "paldeckNumber": 35,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 2840,
+      "rarity": 1,
+      "workSuitability": {
+        "gathering": 1,
+        "cooling": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "MopKing",
+      "slug": "sweepa",
+      "name": "Sweepa",
+      "paldeckNumber": 36,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 2150,
+      "rarity": 6,
+      "workSuitability": {
+        "gathering": 2,
+        "cooling": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "TentacleTurtle",
+      "slug": "turtacle",
+      "name": "Turtacle",
+      "paldeckNumber": 37,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2410,
+      "rarity": 3,
+      "workSuitability": {
+        "watering": 2,
+        "mining": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "TentacleTurtle_Ground",
+      "slug": "turtacle-terra",
+      "name": "Turtacle Terra",
+      "paldeckNumber": 37,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "ground"
+      ],
+      "breedingPower": 1330,
+      "rarity": 4,
+      "workSuitability": {
+        "watering": 2,
+        "mining": 3,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "WindChimes",
+      "slug": "hangyu",
+      "name": "Hangyu",
+      "paldeckNumber": 38,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 2780,
+      "rarity": 1,
+      "workSuitability": {
+        "handiwork": 1,
+        "gathering": 1,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "WindChimes_Ice",
+      "slug": "hangyu-cryst",
+      "name": "Hangyu Cryst",
+      "paldeckNumber": 38,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 2510,
+      "rarity": 2,
+      "workSuitability": {
+        "handiwork": 3,
+        "gathering": 2,
+        "cooling": 2,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "SweetsSheep",
+      "slug": "woolipop",
+      "name": "Woolipop",
+      "paldeckNumber": 39,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2820,
+      "rarity": 3,
+      "workSuitability": {
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "SweetsSheep_Ground",
+      "slug": "woolipop-terra",
+      "name": "Woolipop Terra",
+      "paldeckNumber": 39,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 2030,
+      "rarity": 4,
+      "workSuitability": {
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "CowPal",
+      "slug": "mozzarina",
+      "name": "Mozzarina",
+      "paldeckNumber": 40,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2800,
+      "rarity": 2,
+      "workSuitability": {
+        "farming": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "BlueDragon",
+      "slug": "azurobe",
+      "name": "Azurobe",
+      "paldeckNumber": 41,
+      "paldeckSuffix": null,
+      "elements": [
+        "water",
+        "dragon"
+      ],
+      "breedingPower": 1830,
+      "rarity": 7,
+      "workSuitability": {
+        "watering": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "BlueDragon_Ice",
+      "slug": "azurobe-cryst",
+      "name": "Azurobe Cryst",
+      "paldeckNumber": 41,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice",
+        "dragon"
+      ],
+      "breedingPower": 1220,
+      "rarity": 8,
+      "workSuitability": {
+        "cooling": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "ElecCat",
+      "slug": "sparkit",
+      "name": "Sparkit",
+      "paldeckNumber": 42,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 3010,
+      "rarity": 1,
+      "workSuitability": {
+        "generatingElectricity": 1,
+        "handiwork": 1,
+        "transporting": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Kelpie",
+      "slug": "kelpsea",
+      "name": "Kelpsea",
+      "paldeckNumber": 43,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2810,
+      "rarity": 1,
+      "workSuitability": {
+        "watering": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Kelpie_Fire",
+      "slug": "kelpsea-ignis",
+      "name": "Kelpsea Ignis",
+      "paldeckNumber": 43,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2470,
+      "rarity": 2,
+      "workSuitability": {
+        "kindling": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "PinkRabbit",
+      "slug": "ribbuny",
+      "name": "Ribbuny",
+      "paldeckNumber": 44,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2860,
+      "rarity": 1,
+      "workSuitability": {
+        "handiwork": 1,
+        "gathering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "PinkRabbit_Grass",
+      "slug": "ribbuny-botan",
+      "name": "Ribbuny Botan",
+      "paldeckNumber": 44,
+      "paldeckSuffix": "B",
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2460,
+      "rarity": 1,
+      "workSuitability": {
+        "planting": 2,
+        "handiwork": 2,
+        "gathering": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "JellyfishFairy",
+      "slug": "jelliette",
+      "name": "Jelliette",
+      "paldeckNumber": 45,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2650,
+      "rarity": 3,
+      "workSuitability": {
+        "watering": 2,
+        "handiwork": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "JellyfishGhost",
+      "slug": "jellroy",
+      "name": "Jellroy",
+      "paldeckNumber": 46,
+      "paldeckSuffix": null,
+      "elements": [
+        "water",
+        "dark"
+      ],
+      "breedingPower": 2590,
+      "rarity": 3,
+      "workSuitability": {
+        "watering": 2,
+        "handiwork": 1,
+        "medicineProduction": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "ClioneTwins",
+      "slug": "amione",
+      "name": "Amione",
+      "paldeckNumber": 47,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2520,
+      "rarity": 2,
+      "workSuitability": {
+        "watering": 1,
+        "handiwork": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "OctopusGirl",
+      "slug": "gloopie",
+      "name": "Gloopie",
+      "paldeckNumber": 48,
+      "paldeckSuffix": null,
+      "elements": [
+        "water",
+        "dark"
+      ],
+      "breedingPower": 2530,
+      "rarity": 5,
+      "workSuitability": {
+        "watering": 2,
+        "handiwork": 2,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "OctopusGirl_Neutral",
+      "slug": "gloopie-primo",
+      "name": "Gloopie Primo",
+      "paldeckNumber": 48,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "neutral"
+      ],
+      "breedingPower": 1630,
+      "rarity": 6,
+      "workSuitability": {
+        "watering": 2,
+        "handiwork": 2,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Eagle",
+      "slug": "galeclaw",
+      "name": "Galeclaw",
+      "paldeckNumber": 49,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2570,
+      "rarity": 2,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "GhostBlackCat",
+      "slug": "wispaw",
+      "name": "Wispaw",
+      "paldeckNumber": 50,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2250,
+      "rarity": 5,
+      "workSuitability": {
+        "handiwork": 2,
+        "lumbering": 1,
+        "medicineProduction": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "HawkBird",
+      "slug": "nitewing",
+      "name": "Nitewing",
+      "paldeckNumber": 51,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2560,
+      "rarity": 3,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "CatBat",
+      "slug": "tombat",
+      "name": "Tombat",
+      "paldeckNumber": 52,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2340,
+      "rarity": 5,
+      "workSuitability": {
+        "gathering": 2,
+        "mining": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "ColorfulBird",
+      "slug": "tocotoco",
+      "name": "Tocotoco",
+      "paldeckNumber": 53,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2730,
+      "rarity": 1,
+      "workSuitability": {
+        "gathering": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Kirin",
+      "slug": "univolt",
+      "name": "Univolt",
+      "paldeckNumber": 54,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 2270,
+      "rarity": 5,
+      "workSuitability": {
+        "generatingElectricity": 3,
+        "lumbering": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Kirin_Ice",
+      "slug": "univolt-cryst",
+      "name": "Univolt Cryst",
+      "paldeckNumber": 54,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 540,
+      "rarity": 6,
+      "workSuitability": {
+        "lumbering": 3,
+        "cooling": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "SharkKid",
+      "slug": "gobfin",
+      "name": "Gobfin",
+      "paldeckNumber": 55,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2550,
+      "rarity": 2,
+      "workSuitability": {
+        "watering": 2,
+        "handiwork": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "SharkKid_Fire",
+      "slug": "gobfin-ignis",
+      "name": "Gobfin Ignis",
+      "paldeckNumber": 55,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2430,
+      "rarity": 3,
+      "workSuitability": {
+        "kindling": 2,
+        "handiwork": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Werewolf",
+      "slug": "loupmoon",
+      "name": "Loupmoon",
+      "paldeckNumber": 56,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2110,
+      "rarity": 3,
+      "workSuitability": {
+        "handiwork": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Werewolf_Ice",
+      "slug": "loupmoon-cryst",
+      "name": "Loupmoon Cryst",
+      "paldeckNumber": 56,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 1290,
+      "rarity": 3,
+      "workSuitability": {
+        "handiwork": 4,
+        "cooling": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "DarkCrow",
+      "slug": "cawgnito",
+      "name": "Cawgnito",
+      "paldeckNumber": 57,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2370,
+      "rarity": 3,
+      "workSuitability": {
+        "lumbering": 2,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "FlameBuffalo",
+      "slug": "arsox",
+      "name": "Arsox",
+      "paldeckNumber": 58,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2320,
+      "rarity": 4,
+      "workSuitability": {
+        "kindling": 3,
+        "lumbering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "FluffyBird",
+      "slug": "muffly",
+      "name": "Muffly",
+      "paldeckNumber": 59,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 2480,
+      "rarity": 2,
+      "workSuitability": {
+        "cooling": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "LittleBriarRose",
+      "slug": "bristla",
+      "name": "Bristla",
+      "paldeckNumber": 60,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2690,
+      "rarity": 1,
+      "workSuitability": {
+        "planting": 2,
+        "handiwork": 2,
+        "gathering": 2,
+        "medicineProduction": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "CuteButterfly",
+      "slug": "cinnamoth",
+      "name": "Cinnamoth",
+      "paldeckNumber": 61,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2620,
+      "rarity": 4,
+      "workSuitability": {
+        "planting": 2,
+        "gathering": 2,
+        "medicineProduction": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "ElecPomeranian",
+      "slug": "puffolt",
+      "name": "Puffolt",
+      "paldeckNumber": 62,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 2360,
+      "rarity": 2,
+      "workSuitability": {
+        "generatingElectricity": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "FairyDragon",
+      "slug": "elphidran",
+      "name": "Elphidran",
+      "paldeckNumber": 63,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon"
+      ],
+      "breedingPower": 2280,
+      "rarity": 7,
+      "workSuitability": {
+        "lumbering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "FairyDragon_Water",
+      "slug": "elphidran-aqua",
+      "name": "Elphidran Aqua",
+      "paldeckNumber": 63,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dragon",
+        "water"
+      ],
+      "breedingPower": 1640,
+      "rarity": 8,
+      "workSuitability": {
+        "watering": 4,
+        "lumbering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "BirdDragon",
+      "slug": "vanwyrm",
+      "name": "Vanwyrm",
+      "paldeckNumber": 64,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire",
+        "dark"
+      ],
+      "breedingPower": 1650,
+      "rarity": 5,
+      "workSuitability": {
+        "kindling": 2,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "BirdDragon_Ice",
+      "slug": "vanwyrm-cryst",
+      "name": "Vanwyrm Cryst",
+      "paldeckNumber": 64,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice",
+        "dark"
+      ],
+      "breedingPower": 1430,
+      "rarity": 5,
+      "workSuitability": {
+        "cooling": 2,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "CatVampire",
+      "slug": "felbat",
+      "name": "Felbat",
+      "paldeckNumber": 65,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1570,
+      "rarity": 6,
+      "workSuitability": {
+        "medicineProduction": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "VioletFairy",
+      "slug": "vaelet",
+      "name": "Vaelet",
+      "paldeckNumber": 66,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1480,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 3,
+        "gathering": 3,
+        "medicineProduction": 3,
+        "transporting": 2,
+        "farming": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "SoldierBee",
+      "slug": "beegarde",
+      "name": "Beegarde",
+      "paldeckNumber": 67,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2350,
+      "rarity": 4,
+      "workSuitability": {
+        "planting": 2,
+        "handiwork": 2,
+        "gathering": 3,
+        "lumbering": 2,
+        "medicineProduction": 2,
+        "transporting": 2,
+        "farming": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "QueenBee",
+      "slug": "elizabee",
+      "name": "Elizabee",
+      "paldeckNumber": 68,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1790,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 4,
+        "handiwork": 4,
+        "gathering": 4,
+        "lumbering": 3,
+        "medicineProduction": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "PinkLizard",
+      "slug": "lovander",
+      "name": "Lovander",
+      "paldeckNumber": 69,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2090,
+      "rarity": 5,
+      "workSuitability": {
+        "handiwork": 3,
+        "mining": 2,
+        "medicineProduction": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "NaughtyCat",
+      "slug": "grintale",
+      "name": "Grintale",
+      "paldeckNumber": 70,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2120,
+      "rarity": 6,
+      "workSuitability": {
+        "gathering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "PurpleSpider",
+      "slug": "tarantriss",
+      "name": "Tarantriss",
+      "paldeckNumber": 71,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1730,
+      "rarity": 3,
+      "workSuitability": {
+        "handiwork": 3,
+        "gathering": 3,
+        "medicineProduction": 2,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "IceSeal",
+      "slug": "polapup",
+      "name": "Polapup",
+      "paldeckNumber": 72,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice",
+        "water"
+      ],
+      "breedingPower": 1660,
+      "rarity": 5,
+      "workSuitability": {
+        "watering": 3,
+        "cooling": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "IceSeal_Ground",
+      "slug": "polapup-terra",
+      "name": "Polapup Terra",
+      "paldeckNumber": 72,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice",
+        "ground"
+      ],
+      "breedingPower": 1100,
+      "rarity": 6,
+      "workSuitability": {
+        "mining": 4,
+        "cooling": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "LizardMan",
+      "slug": "leezpunk",
+      "name": "Leezpunk",
+      "paldeckNumber": 73,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2670,
+      "rarity": 2,
+      "workSuitability": {
+        "handiwork": 2,
+        "gathering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "LizardMan_Fire",
+      "slug": "leezpunk-ignis",
+      "name": "Leezpunk Ignis",
+      "paldeckNumber": 73,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2640,
+      "rarity": 3,
+      "workSuitability": {
+        "kindling": 2,
+        "handiwork": 2,
+        "gathering": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "Gorilla",
+      "slug": "gorirat",
+      "name": "Gorirat",
+      "paldeckNumber": 74,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2140,
+      "rarity": 5,
+      "workSuitability": {
+        "handiwork": 2,
+        "lumbering": 3,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "Gorilla_Ground",
+      "slug": "gorirat-terra",
+      "name": "Gorirat Terra",
+      "paldeckNumber": 74,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 1880,
+      "rarity": 5,
+      "workSuitability": {
+        "handiwork": 2,
+        "mining": 3,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "Serpent",
+      "slug": "surfent",
+      "name": "Surfent",
+      "paldeckNumber": 75,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2440,
+      "rarity": 4,
+      "workSuitability": {
+        "watering": 3,
+        "farming": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Serpent_Ground",
+      "slug": "surfent-terra",
+      "name": "Surfent Terra",
+      "paldeckNumber": 75,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 1840,
+      "rarity": 5,
+      "workSuitability": {
+        "gathering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "RobinHood",
+      "slug": "robinquill",
+      "name": "Robinquill",
+      "paldeckNumber": 76,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2260,
+      "rarity": 5,
+      "workSuitability": {
+        "planting": 2,
+        "handiwork": 3,
+        "gathering": 3,
+        "lumbering": 2,
+        "medicineProduction": 1,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "RobinHood_Ground",
+      "slug": "robinquill-terra",
+      "name": "Robinquill Terra",
+      "paldeckNumber": 76,
+      "paldeckSuffix": "B",
+      "elements": [
+        "grass",
+        "ground"
+      ],
+      "breedingPower": 2050,
+      "rarity": 6,
+      "workSuitability": {
+        "handiwork": 3,
+        "gathering": 3,
+        "lumbering": 2,
+        "medicineProduction": 2,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "FlowerRabbit",
+      "slug": "flopie",
+      "name": "Flopie",
+      "paldeckNumber": 77,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2660,
+      "rarity": 1,
+      "workSuitability": {
+        "planting": 2,
+        "handiwork": 2,
+        "gathering": 2,
+        "medicineProduction": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "FoxMage",
+      "slug": "wixen",
+      "name": "Wixen",
+      "paldeckNumber": 78,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 2080,
+      "rarity": 6,
+      "workSuitability": {
+        "kindling": 3,
+        "handiwork": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "FoxMage_Dark",
+      "slug": "wixen-noct",
+      "name": "Wixen Noct",
+      "paldeckNumber": 78,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire",
+        "dark"
+      ],
+      "breedingPower": 1490,
+      "rarity": 6,
+      "workSuitability": {
+        "kindling": 4,
+        "handiwork": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "CatMage",
+      "slug": "katress",
+      "name": "Katress",
+      "paldeckNumber": 79,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 2040,
+      "rarity": 6,
+      "workSuitability": {
+        "handiwork": 3,
+        "medicineProduction": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "CatMage_Fire",
+      "slug": "katress-ignis",
+      "name": "Katress Ignis",
+      "paldeckNumber": 79,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark",
+        "fire"
+      ],
+      "breedingPower": 1800,
+      "rarity": 6,
+      "workSuitability": {
+        "kindling": 3,
+        "handiwork": 3,
+        "medicineProduction": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "HadesBird",
+      "slug": "helzephyr",
+      "name": "Helzephyr",
+      "paldeckNumber": 80,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1130,
+      "rarity": 7,
+      "workSuitability": {
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "HadesBird_Electric",
+      "slug": "helzephyr-lux",
+      "name": "Helzephyr Lux",
+      "paldeckNumber": 80,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark",
+        "electric"
+      ],
+      "breedingPower": 960,
+      "rarity": 8,
+      "workSuitability": {
+        "generatingElectricity": 4,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassMinotaur",
+      "slug": "elgrove",
+      "name": "Elgrove",
+      "paldeckNumber": 81,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2020,
+      "rarity": 6,
+      "workSuitability": {
+        "planting": 3,
+        "gathering": 2,
+        "lumbering": 3,
+        "mining": 2,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassMinotaur_Ice",
+      "slug": "elgrove-cryst",
+      "name": "Elgrove Cryst",
+      "paldeckNumber": 81,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 440,
+      "rarity": 7,
+      "workSuitability": {
+        "lumbering": 3,
+        "mining": 3,
+        "cooling": 5,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "Mutant",
+      "slug": "lunaris",
+      "name": "Lunaris",
+      "paldeckNumber": 82,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2010,
+      "rarity": 6,
+      "workSuitability": {
+        "handiwork": 4,
+        "gathering": 2,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "FengyunDeeper",
+      "slug": "fenglope",
+      "name": "Fenglope",
+      "paldeckNumber": 83,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 1960,
+      "rarity": 3,
+      "workSuitability": {
+        "lumbering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "FengyunDeeper_Electric",
+      "slug": "fenglope-lux",
+      "name": "Fenglope Lux",
+      "paldeckNumber": 83,
+      "paldeckSuffix": "B",
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 900,
+      "rarity": 3,
+      "workSuitability": {
+        "generatingElectricity": 5,
+        "lumbering": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "FlowerDinosaur",
+      "slug": "dinossom",
+      "name": "Dinossom",
+      "paldeckNumber": 84,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "dragon"
+      ],
+      "breedingPower": 2100,
+      "rarity": 6,
+      "workSuitability": {
+        "planting": 3,
+        "lumbering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "FlowerDinosaur_Electric",
+      "slug": "dinossom-lux",
+      "name": "Dinossom Lux",
+      "paldeckNumber": 84,
+      "paldeckSuffix": "B",
+      "elements": [
+        "electric",
+        "dragon"
+      ],
+      "breedingPower": 1890,
+      "rarity": 7,
+      "workSuitability": {
+        "generatingElectricity": 3,
+        "lumbering": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "Ronin",
+      "slug": "bushi",
+      "name": "Bushi",
+      "paldeckNumber": 85,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 1560,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 2,
+        "handiwork": 2,
+        "gathering": 1,
+        "lumbering": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Ronin_Dark",
+      "slug": "bushi-noct",
+      "name": "Bushi Noct",
+      "paldeckNumber": 85,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire",
+        "dark"
+      ],
+      "breedingPower": 840,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 2,
+        "handiwork": 2,
+        "gathering": 1,
+        "lumbering": 5,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "IceCrocodile",
+      "slug": "munchill",
+      "name": "Munchill",
+      "paldeckNumber": 86,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice",
+        "water"
+      ],
+      "breedingPower": 2130,
+      "rarity": 3,
+      "workSuitability": {
+        "watering": 2,
+        "cooling": 3,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassMammoth",
+      "slug": "mammorest",
+      "name": "Mammorest",
+      "paldeckNumber": 87,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "ground"
+      ],
+      "breedingPower": 1340,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 4,
+        "lumbering": 4,
+        "mining": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassMammoth_Ice",
+      "slug": "mammorest-cryst",
+      "name": "Mammorest Cryst",
+      "paldeckNumber": 87,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice",
+        "ground"
+      ],
+      "breedingPower": 1070,
+      "rarity": 9,
+      "workSuitability": {
+        "lumbering": 5,
+        "mining": 4,
+        "cooling": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "StuffedShark",
+      "slug": "finsider",
+      "name": "Finsider",
+      "paldeckNumber": 88,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 2450,
+      "rarity": 3,
+      "workSuitability": {
+        "watering": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "StuffedShark_Fire",
+      "slug": "finsider-ignis",
+      "name": "Finsider Ignis",
+      "paldeckNumber": 88,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "fire"
+      ],
+      "breedingPower": 2240,
+      "rarity": 4,
+      "workSuitability": {
+        "kindling": 2,
+        "watering": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "FlowerDoll",
+      "slug": "petallia",
+      "name": "Petallia",
+      "paldeckNumber": 89,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1720,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 4,
+        "handiwork": 3,
+        "gathering": 3,
+        "medicineProduction": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "FlowerDoll_Fire",
+      "slug": "petallia-ignis",
+      "name": "Petallia Ignis",
+      "paldeckNumber": 89,
+      "paldeckSuffix": "B",
+      "elements": [
+        "grass",
+        "fire"
+      ],
+      "breedingPower": 820,
+      "rarity": 9,
+      "workSuitability": {
+        "kindling": 4,
+        "handiwork": 3,
+        "gathering": 3,
+        "medicineProduction": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "PandaGirl",
+      "slug": "leafan",
+      "name": "Leafan",
+      "paldeckNumber": 90,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1410,
+      "rarity": 7,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 3,
+        "gathering": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Baphomet",
+      "slug": "incineram",
+      "name": "Incineram",
+      "paldeckNumber": 91,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire",
+        "dark"
+      ],
+      "breedingPower": 1470,
+      "rarity": 4,
+      "workSuitability": {
+        "kindling": 3,
+        "handiwork": 2,
+        "mining": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Baphomet_Dark",
+      "slug": "incineram-noct",
+      "name": "Incineram Noct",
+      "paldeckNumber": 91,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1310,
+      "rarity": 5,
+      "workSuitability": {
+        "handiwork": 3,
+        "mining": 4,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "RaijinDaughter",
+      "slug": "dazzi",
+      "name": "Dazzi",
+      "paldeckNumber": 92,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 2400,
+      "rarity": 2,
+      "workSuitability": {
+        "generatingElectricity": 3,
+        "handiwork": 2,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "RaijinDaughter_Water",
+      "slug": "dazzi-noct",
+      "name": "Dazzi Noct",
+      "paldeckNumber": 92,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark",
+        "electric"
+      ],
+      "breedingPower": 1910,
+      "rarity": 2,
+      "workSuitability": {
+        "generatingElectricity": 1,
+        "handiwork": 1,
+        "medicineProduction": 1,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "FireKirin",
+      "slug": "pyrin",
+      "name": "Pyrin",
+      "paldeckNumber": 93,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 1980,
+      "rarity": 6,
+      "workSuitability": {
+        "kindling": 4,
+        "lumbering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "FireKirin_Dark",
+      "slug": "pyrin-noct",
+      "name": "Pyrin Noct",
+      "paldeckNumber": 93,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire",
+        "dark"
+      ],
+      "breedingPower": 1870,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 4,
+        "lumbering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "LazyDragon",
+      "slug": "relaxaurus",
+      "name": "Relaxaurus",
+      "paldeckNumber": 94,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon",
+        "water"
+      ],
+      "breedingPower": 1090,
+      "rarity": 8,
+      "workSuitability": {
+        "watering": 3,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "LazyDragon_Electric",
+      "slug": "relaxaurus-lux",
+      "name": "Relaxaurus Lux",
+      "paldeckNumber": 94,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dragon",
+        "electric"
+      ],
+      "breedingPower": 770,
+      "rarity": 9,
+      "workSuitability": {
+        "generatingElectricity": 4,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "IceFox",
+      "slug": "foxcicle",
+      "name": "Foxcicle",
+      "paldeckNumber": 95,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 1970,
+      "rarity": 5,
+      "workSuitability": {
+        "cooling": 4,
+        "farming": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "ThunderBird",
+      "slug": "beakon",
+      "name": "Beakon",
+      "paldeckNumber": 96,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 1690,
+      "rarity": 6,
+      "workSuitability": {
+        "generatingElectricity": 4,
+        "gathering": 2,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "ThunderBird_Ice",
+      "slug": "beakon-cryst",
+      "name": "Beakon Cryst",
+      "paldeckNumber": 96,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 580,
+      "rarity": 7,
+      "workSuitability": {
+        "gathering": 2,
+        "cooling": 5,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "GhostAnglerfish",
+      "slug": "ghangler",
+      "name": "Ghangler",
+      "paldeckNumber": 97,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "water"
+      ],
+      "breedingPower": 880,
+      "rarity": 5,
+      "workSuitability": {
+        "watering": 5,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "GhostAnglerfish_Fire",
+      "slug": "ghangler-ignis",
+      "name": "Ghangler Ignis",
+      "paldeckNumber": 97,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire",
+        "water"
+      ],
+      "breedingPower": 720,
+      "rarity": 6,
+      "workSuitability": {
+        "kindling": 5,
+        "watering": 5,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "ThunderDog",
+      "slug": "rayhound",
+      "name": "Rayhound",
+      "paldeckNumber": 98,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 1920,
+      "rarity": 5,
+      "workSuitability": {
+        "generatingElectricity": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "ThunderDog_Ice",
+      "slug": "rayhound-cryst",
+      "name": "Rayhound Cryst",
+      "paldeckNumber": 98,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 1600,
+      "rarity": 6,
+      "workSuitability": {
+        "cooling": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "DarkScorpion",
+      "slug": "menasting",
+      "name": "Menasting",
+      "paldeckNumber": 99,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "ground"
+      ],
+      "breedingPower": 1120,
+      "rarity": 9,
+      "workSuitability": {
+        "lumbering": 3,
+        "mining": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "DarkScorpion_Ground",
+      "slug": "menasting-terra",
+      "name": "Menasting Terra",
+      "paldeckNumber": 99,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 640,
+      "rarity": 10,
+      "workSuitability": {
+        "lumbering": 3,
+        "mining": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "CactusDoll",
+      "slug": "needoll",
+      "name": "Needoll",
+      "paldeckNumber": 100,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2420,
+      "rarity": 2,
+      "workSuitability": {
+        "planting": 3,
+        "gathering": 3,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "CactusDoll_Dark",
+      "slug": "needoll-noct",
+      "name": "Needoll Noct",
+      "paldeckNumber": 100,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark",
+        "grass"
+      ],
+      "breedingPower": 1580,
+      "rarity": 3,
+      "workSuitability": {
+        "planting": 3,
+        "gathering": 3,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "IceDeer",
+      "slug": "reindrix",
+      "name": "Reindrix",
+      "paldeckNumber": 101,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 1930,
+      "rarity": 4,
+      "workSuitability": {
+        "lumbering": 3,
+        "cooling": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassPanda",
+      "slug": "mossanda",
+      "name": "Mossanda",
+      "paldeckNumber": 102,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2060,
+      "rarity": 6,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 2,
+        "lumbering": 4,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassPanda_Electric",
+      "slug": "mossanda-lux",
+      "name": "Mossanda Lux",
+      "paldeckNumber": 102,
+      "paldeckSuffix": "B",
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 1440,
+      "rarity": 7,
+      "workSuitability": {
+        "generatingElectricity": 4,
+        "handiwork": 3,
+        "lumbering": 4,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "WeaselDragon",
+      "slug": "chillet",
+      "name": "Chillet",
+      "paldeckNumber": 103,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice",
+        "dragon"
+      ],
+      "breedingPower": 2330,
+      "rarity": 4,
+      "workSuitability": {
+        "gathering": 1,
+        "cooling": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "WeaselDragon_Fire",
+      "slug": "chillet-ignis",
+      "name": "Chillet Ignis",
+      "paldeckNumber": 103,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire",
+        "dragon"
+      ],
+      "breedingPower": 1950,
+      "rarity": 5,
+      "workSuitability": {
+        "kindling": 4,
+        "gathering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "RedArmorBird",
+      "slug": "ragnahawk",
+      "name": "Ragnahawk",
+      "paldeckNumber": 104,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 1050,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 4,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "VolcanoDragon",
+      "slug": "moldron",
+      "name": "Moldron",
+      "paldeckNumber": 105,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire",
+        "ground"
+      ],
+      "breedingPower": 750,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 5,
+        "mining": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "VolcanoDragon_Ice",
+      "slug": "moldron-cryst",
+      "name": "Moldron Cryst",
+      "paldeckNumber": 105,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice",
+        "ground"
+      ],
+      "breedingPower": 380,
+      "rarity": 8,
+      "workSuitability": {
+        "mining": 5,
+        "cooling": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "TropicalOstrich",
+      "slug": "palumba",
+      "name": "Palumba",
+      "paldeckNumber": 106,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1240,
+      "rarity": 6,
+      "workSuitability": {
+        "planting": 4,
+        "gathering": 4,
+        "mining": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "DrillGame",
+      "slug": "digtoise",
+      "name": "Digtoise",
+      "paldeckNumber": 107,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 1550,
+      "rarity": 5,
+      "workSuitability": {
+        "mining": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "SakuraSaurus",
+      "slug": "broncherry",
+      "name": "Broncherry",
+      "paldeckNumber": 108,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1380,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "SakuraSaurus_Water",
+      "slug": "broncherry-aqua",
+      "name": "Broncherry Aqua",
+      "paldeckNumber": 108,
+      "paldeckSuffix": "B",
+      "elements": [
+        "grass",
+        "water"
+      ],
+      "breedingPower": 1080,
+      "rarity": 8,
+      "workSuitability": {
+        "watering": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "LazyCatfish",
+      "slug": "dumud",
+      "name": "Dumud",
+      "paldeckNumber": 109,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground",
+        "water"
+      ],
+      "breedingPower": 2290,
+      "rarity": 4,
+      "workSuitability": {
+        "watering": 2,
+        "mining": 2,
+        "transporting": 1,
+        "farming": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "LazyCatfish_Gold",
+      "slug": "dumud-gild",
+      "name": "Dumud Gild",
+      "paldeckNumber": 109,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground",
+        "water"
+      ],
+      "breedingPower": 1620,
+      "rarity": 5,
+      "workSuitability": {
+        "watering": 2,
+        "mining": 2,
+        "transporting": 1,
+        "farming": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "Plesiosaur",
+      "slug": "braloha",
+      "name": "Braloha",
+      "paldeckNumber": 110,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "ground"
+      ],
+      "breedingPower": 1030,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 5,
+        "gathering": 5,
+        "mining": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "AmaterasuWolf",
+      "slug": "kitsun",
+      "name": "Kitsun",
+      "paldeckNumber": 111,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 1670,
+      "rarity": 6,
+      "workSuitability": {
+        "kindling": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "AmaterasuWolf_Dark",
+      "slug": "kitsun-noct",
+      "name": "Kitsun Noct",
+      "paldeckNumber": 111,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 800,
+      "rarity": 6,
+      "workSuitability": {
+        "kindling": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "Manticore",
+      "slug": "blazehowl",
+      "name": "Blazehowl",
+      "paldeckNumber": 112,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 1360,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 5,
+        "lumbering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "Manticore_Dark",
+      "slug": "blazehowl-noct",
+      "name": "Blazehowl Noct",
+      "paldeckNumber": 112,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire",
+        "dark"
+      ],
+      "breedingPower": 1270,
+      "rarity": 8,
+      "workSuitability": {
+        "kindling": 5,
+        "lumbering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "HerculesBeetle",
+      "slug": "warsect",
+      "name": "Warsect",
+      "paldeckNumber": 113,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground",
+        "grass"
+      ],
+      "breedingPower": 1280,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 3,
+        "lumbering": 4,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "HerculesBeetle_Ground",
+      "slug": "warsect-terra",
+      "name": "Warsect Terra",
+      "paldeckNumber": 113,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 630,
+      "rarity": 9,
+      "workSuitability": {
+        "handiwork": 2,
+        "mining": 5,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "SnowPeafowl",
+      "slug": "frostplume",
+      "name": "Frostplume",
+      "paldeckNumber": 114,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 860,
+      "rarity": 4,
+      "workSuitability": {
+        "gathering": 2,
+        "cooling": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "DarkFlameFox",
+      "slug": "majex",
+      "name": "Majex",
+      "paldeckNumber": 115,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "fire"
+      ],
+      "breedingPower": 1010,
+      "rarity": 5,
+      "workSuitability": {
+        "kindling": 4,
+        "handiwork": 5,
+        "medicineProduction": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "WhiteMoth",
+      "slug": "sibelyx",
+      "name": "Sibelyx",
+      "paldeckNumber": 116,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 1810,
+      "rarity": 7,
+      "workSuitability": {
+        "medicineProduction": 3,
+        "cooling": 3,
+        "farming": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "WhiteMoth_Neutral",
+      "slug": "sibelyx-primo",
+      "name": "Sibelyx Primo",
+      "paldeckNumber": 116,
+      "paldeckSuffix": "B",
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 650,
+      "rarity": 8,
+      "workSuitability": {
+        "medicineProduction": 3,
+        "farming": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "GhostBeast",
+      "slug": "maraith",
+      "name": "Maraith",
+      "paldeckNumber": 117,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1710,
+      "rarity": 6,
+      "workSuitability": {
+        "gathering": 4,
+        "mining": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "MushroomDragon",
+      "slug": "shroomer",
+      "name": "Shroomer",
+      "paldeckNumber": 118,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1520,
+      "rarity": 4,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 2,
+        "gathering": 3,
+        "lumbering": 2,
+        "farming": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "MushroomDragon_Dark",
+      "slug": "shroomer-noct",
+      "name": "Shroomer Noct",
+      "paldeckNumber": 118,
+      "paldeckSuffix": "B",
+      "elements": [
+        "grass",
+        "dark"
+      ],
+      "breedingPower": 1450,
+      "rarity": 5,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 3,
+        "gathering": 3,
+        "lumbering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "IceWitch",
+      "slug": "icelyn",
+      "name": "Icelyn",
+      "paldeckNumber": 119,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 1260,
+      "rarity": 4,
+      "workSuitability": {
+        "handiwork": 5,
+        "medicineProduction": 4,
+        "cooling": 5,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "MummyPal",
+      "slug": "gildra",
+      "name": "Gildra",
+      "paldeckNumber": 120,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "ground"
+      ],
+      "breedingPower": 1170,
+      "rarity": 5,
+      "workSuitability": {
+        "handiwork": 5,
+        "medicineProduction": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Umihebi",
+      "slug": "jormuntide",
+      "name": "Jormuntide",
+      "paldeckNumber": 121,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon",
+        "water"
+      ],
+      "breedingPower": 590,
+      "rarity": 8,
+      "workSuitability": {
+        "watering": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "Umihebi_Fire",
+      "slug": "jormuntide-ignis",
+      "name": "Jormuntide Ignis",
+      "paldeckNumber": 121,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dragon",
+        "fire"
+      ],
+      "breedingPower": 170,
+      "rarity": 9,
+      "workSuitability": {
+        "kindling": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "Suzaku",
+      "slug": "suzaku",
+      "name": "Suzaku",
+      "paldeckNumber": 122,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 1200,
+      "rarity": 8,
+      "workSuitability": {
+        "kindling": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "Suzaku_Water",
+      "slug": "suzaku-aqua",
+      "name": "Suzaku Aqua",
+      "paldeckNumber": 122,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 740,
+      "rarity": 9,
+      "workSuitability": {
+        "watering": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "FeatherOstrich",
+      "slug": "dazemu",
+      "name": "Dazemu",
+      "paldeckNumber": 123,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 2210,
+      "rarity": 5,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "SkyDragon",
+      "slug": "quivern",
+      "name": "Quivern",
+      "paldeckNumber": 124,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon"
+      ],
+      "breedingPower": 1210,
+      "rarity": 7,
+      "workSuitability": {
+        "handiwork": 2,
+        "gathering": 3,
+        "mining": 4,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "SkyDragon_Grass",
+      "slug": "quivern-botan",
+      "name": "Quivern Botan",
+      "paldeckNumber": 124,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dragon",
+        "grass"
+      ],
+      "breedingPower": 1300,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 5,
+        "handiwork": 2,
+        "gathering": 4,
+        "mining": 3,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "LeafPrincess",
+      "slug": "lullu",
+      "name": "Lullu",
+      "paldeckNumber": 125,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1990,
+      "rarity": 4,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 3,
+        "gathering": 2,
+        "medicineProduction": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "SmallArmadillo",
+      "slug": "kikit",
+      "name": "Kikit",
+      "paldeckNumber": 126,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 2310,
+      "rarity": 4,
+      "workSuitability": {
+        "mining": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "GuardianDog",
+      "slug": "yakumo",
+      "name": "Yakumo",
+      "paldeckNumber": 127,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 2230,
+      "rarity": 4,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "SwordCutlassfish",
+      "slug": "skutlass",
+      "name": "Skutlass",
+      "paldeckNumber": 128,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 1420,
+      "rarity": 5,
+      "workSuitability": {
+        "watering": 4,
+        "gathering": 1,
+        "lumbering": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "SwordCutlassfish_Fire",
+      "slug": "skutlass-ignis",
+      "name": "Skutlass Ignis",
+      "paldeckNumber": 128,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "fire"
+      ],
+      "breedingPower": 1590,
+      "rarity": 5,
+      "workSuitability": {
+        "kindling": 3,
+        "watering": 2,
+        "gathering": 2,
+        "lumbering": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "VolcanicMonster",
+      "slug": "reptyro",
+      "name": "Reptyro",
+      "paldeckNumber": 129,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire",
+        "ground"
+      ],
+      "breedingPower": 1060,
+      "rarity": 6,
+      "workSuitability": {
+        "kindling": 5,
+        "mining": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "VolcanicMonster_Ice",
+      "slug": "reptyro-cryst",
+      "name": "Reptyro Cryst",
+      "paldeckNumber": 129,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice",
+        "ground"
+      ],
+      "breedingPower": 600,
+      "rarity": 7,
+      "workSuitability": {
+        "mining": 5,
+        "cooling": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "NightBlueHorse",
+      "slug": "starryon",
+      "name": "Starryon",
+      "paldeckNumber": 130,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1150,
+      "rarity": 7,
+      "workSuitability": {
+        "gathering": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "NightBlueHorse_Neutral",
+      "slug": "starryon-primo",
+      "name": "Starryon Primo",
+      "paldeckNumber": 130,
+      "paldeckSuffix": "B",
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 430,
+      "rarity": 8,
+      "workSuitability": {
+        "gathering": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "RockBeast",
+      "slug": "pierdon",
+      "name": "Pierdon",
+      "paldeckNumber": 131,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 1110,
+      "rarity": 6,
+      "workSuitability": {
+        "mining": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "RockBeast_Ice",
+      "slug": "pierdon-cryst",
+      "name": "Pierdon Cryst",
+      "paldeckNumber": 131,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 460,
+      "rarity": 7,
+      "workSuitability": {
+        "mining": 5,
+        "cooling": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "WhiteTiger",
+      "slug": "cryolinx",
+      "name": "Cryolinx",
+      "paldeckNumber": 132,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 1040,
+      "rarity": 7,
+      "workSuitability": {
+        "handiwork": 3,
+        "lumbering": 4,
+        "cooling": 4,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "WhiteTiger_Ground",
+      "slug": "cryolinx-terra",
+      "name": "Cryolinx Terra",
+      "paldeckNumber": 132,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 470,
+      "rarity": 7,
+      "workSuitability": {
+        "handiwork": 2,
+        "lumbering": 6,
+        "mining": 5,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "SmallYeti",
+      "slug": "snugloo",
+      "name": "Snugloo",
+      "paldeckNumber": 133,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 2390,
+      "rarity": 3,
+      "workSuitability": {
+        "handiwork": 2,
+        "mining": 3,
+        "cooling": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "Yeti",
+      "slug": "wumpo",
+      "name": "Wumpo",
+      "paldeckNumber": 134,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 830,
+      "rarity": 7,
+      "workSuitability": {
+        "handiwork": 3,
+        "lumbering": 5,
+        "cooling": 5,
+        "transporting": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "Yeti_Grass",
+      "slug": "wumpo-botan",
+      "name": "Wumpo Botan",
+      "paldeckNumber": 134,
+      "paldeckSuffix": "B",
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 610,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 3,
+        "lumbering": 5,
+        "transporting": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "CandleGhost",
+      "slug": "sootseer",
+      "name": "Sootseer",
+      "paldeckNumber": 135,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "fire"
+      ],
+      "breedingPower": 980,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 3,
+        "handiwork": 3,
+        "gathering": 2,
+        "mining": 3,
+        "farming": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "VenusFlytrap",
+      "slug": "carnibora",
+      "name": "Carnibora",
+      "paldeckNumber": 136,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1700,
+      "rarity": 6,
+      "workSuitability": {
+        "planting": 6,
+        "handiwork": 4,
+        "gathering": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "KingBahamut",
+      "slug": "blazamut",
+      "name": "Blazamut",
+      "paldeckNumber": 137,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 410,
+      "rarity": 9,
+      "workSuitability": {
+        "kindling": 6,
+        "mining": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "KingBahamut_Dragon",
+      "slug": "blazamut-ryu",
+      "name": "Blazamut Ryu",
+      "paldeckNumber": 137,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dragon",
+        "fire"
+      ],
+      "breedingPower": 100,
+      "rarity": 10,
+      "workSuitability": {
+        "kindling": 6,
+        "mining": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassGolem",
+      "slug": "dualith",
+      "name": "Dualith",
+      "paldeckNumber": 138,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground",
+        "grass"
+      ],
+      "breedingPower": 510,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 3,
+        "gathering": 3,
+        "lumbering": 5,
+        "mining": 6,
+        "transporting": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassGolem_Dark",
+      "slug": "dualith-noct",
+      "name": "Dualith Noct",
+      "paldeckNumber": 138,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ground",
+        "dark"
+      ],
+      "breedingPower": 250,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 3,
+        "gathering": 3,
+        "lumbering": 5,
+        "mining": 6,
+        "transporting": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "Anubis",
+      "slug": "anubis",
+      "name": "Anubis",
+      "paldeckNumber": 139,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 480,
+      "rarity": 10,
+      "workSuitability": {
+        "handiwork": 6,
+        "mining": 6,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "Sekhmet",
+      "slug": "sekhmet",
+      "name": "Sekhmet",
+      "paldeckNumber": 140,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 870,
+      "rarity": 5,
+      "workSuitability": {
+        "handiwork": 6,
+        "mining": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "ScorpionMan",
+      "slug": "prixter",
+      "name": "Prixter",
+      "paldeckNumber": 141,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "ground"
+      ],
+      "breedingPower": 1510,
+      "rarity": 5,
+      "workSuitability": {
+        "gathering": 2,
+        "lumbering": 4,
+        "medicineProduction": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "ScorpionMan_Electric",
+      "slug": "prixter-lux",
+      "name": "Prixter Lux",
+      "paldeckNumber": 141,
+      "paldeckSuffix": "B",
+      "elements": [
+        "electric",
+        "ground"
+      ],
+      "breedingPower": 850,
+      "rarity": 6,
+      "workSuitability": {
+        "generatingElectricity": 3,
+        "gathering": 2,
+        "lumbering": 4,
+        "medicineProduction": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "CubeTurtle",
+      "slug": "tetroise",
+      "name": "Tetroise",
+      "paldeckNumber": 142,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 790,
+      "rarity": 8,
+      "workSuitability": {
+        "mining": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "CubeTurtle_Neutral",
+      "slug": "tetroise-primo",
+      "name": "Tetroise Primo",
+      "paldeckNumber": 142,
+      "paldeckSuffix": "B",
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 200,
+      "rarity": 8,
+      "workSuitability": {
+        "mining": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "BadCatgirl",
+      "slug": "nyafia",
+      "name": "Nyafia",
+      "paldeckNumber": 143,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1250,
+      "rarity": 4,
+      "workSuitability": {
+        "handiwork": 4,
+        "gathering": 4,
+        "lumbering": 2,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "MimicDog",
+      "slug": "mimog",
+      "name": "Mimog",
+      "paldeckNumber": 144,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 1740,
+      "rarity": 7,
+      "workSuitability": {
+        "gathering": 1,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "DarkAlien",
+      "slug": "xenovader",
+      "name": "Xenovader",
+      "paldeckNumber": 145,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1820,
+      "rarity": 7,
+      "workSuitability": {
+        "lumbering": 3,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "WhiteAlienDragon",
+      "slug": "xenogard",
+      "name": "Xenogard",
+      "paldeckNumber": 146,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon"
+      ],
+      "breedingPower": 990,
+      "rarity": 9,
+      "workSuitability": {
+        "mining": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "BlueberryFairy",
+      "slug": "prunelia",
+      "name": "Prunelia",
+      "paldeckNumber": 147,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "dark"
+      ],
+      "breedingPower": 1390,
+      "rarity": 5,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 1,
+        "gathering": 2,
+        "medicineProduction": 3,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "GhostRabbit",
+      "slug": "nitemary",
+      "name": "Nitemary",
+      "paldeckNumber": 148,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1230,
+      "rarity": 6,
+      "workSuitability": {
+        "handiwork": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "GhostRabbit_Grass",
+      "slug": "nitemary-botan",
+      "name": "Nitemary Botan",
+      "paldeckNumber": 148,
+      "paldeckSuffix": "B",
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1320,
+      "rarity": 7,
+      "workSuitability": {
+        "planting": 3,
+        "handiwork": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "BlackPuppy",
+      "slug": "smokie",
+      "name": "Smokie",
+      "paldeckNumber": 149,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1760,
+      "rarity": 2,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "BlackPuppy_Ice",
+      "slug": "smokie-cryst",
+      "name": "Smokie Cryst",
+      "paldeckNumber": 149,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark",
+        "ice"
+      ],
+      "breedingPower": 1610,
+      "rarity": 3,
+      "workSuitability": {
+        "gathering": 2,
+        "cooling": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "MysteryMask",
+      "slug": "omascul",
+      "name": "Omascul",
+      "paldeckNumber": 150,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1140,
+      "rarity": 4,
+      "workSuitability": {
+        "gathering": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "IceNarwhal",
+      "slug": "whalaska",
+      "name": "Whalaska",
+      "paldeckNumber": 151,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice",
+        "water"
+      ],
+      "breedingPower": 710,
+      "rarity": 8,
+      "workSuitability": {
+        "watering": 5,
+        "cooling": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "IceNarwhal_Fire",
+      "slug": "whalaska-ignis",
+      "name": "Whalaska Ignis",
+      "paldeckNumber": 151,
+      "paldeckSuffix": "B",
+      "elements": [
+        "ice",
+        "fire"
+      ],
+      "breedingPower": 370,
+      "rarity": 8,
+      "workSuitability": {
+        "kindling": 5,
+        "cooling": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "GrassRabbitMan",
+      "slug": "verdash",
+      "name": "Verdash",
+      "paldeckNumber": 152,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1160,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 4,
+        "handiwork": 5,
+        "gathering": 5,
+        "lumbering": 3,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "GrimGirl",
+      "slug": "splatterina",
+      "name": "Splatterina",
+      "paldeckNumber": 153,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 780,
+      "rarity": 4,
+      "workSuitability": {
+        "handiwork": 6,
+        "lumbering": 3,
+        "medicineProduction": 5,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "GoldenHorse",
+      "slug": "gildane",
+      "name": "Gildane",
+      "paldeckNumber": 154,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 730,
+      "rarity": 8,
+      "workSuitability": {
+        "gathering": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "SifuDog",
+      "slug": "dogen",
+      "name": "Dogen",
+      "paldeckNumber": 155,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 1460,
+      "rarity": 6,
+      "workSuitability": {
+        "handiwork": 4,
+        "gathering": 3,
+        "lumbering": 3,
+        "medicineProduction": 2,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "SumoDog",
+      "slug": "bulldosu",
+      "name": "Bulldosu",
+      "paldeckNumber": 156,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 1190,
+      "rarity": 4,
+      "workSuitability": {
+        "mining": 4,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "WhiteDeer",
+      "slug": "celesdir",
+      "name": "Celesdir",
+      "paldeckNumber": 157,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 570,
+      "rarity": 6,
+      "workSuitability": {
+        "gathering": 4,
+        "lumbering": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "WhiteDeer_Dark",
+      "slug": "celesdir-noct",
+      "name": "Celesdir Noct",
+      "paldeckNumber": 157,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 270,
+      "rarity": 7,
+      "workSuitability": {
+        "gathering": 4,
+        "lumbering": 8
+      },
+      "description": ""
+    },
+    {
+      "id": "BlackMetalDragon",
+      "slug": "astegon",
+      "name": "Astegon",
+      "paldeckNumber": 158,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon",
+        "dark"
+      ],
+      "breedingPower": 490,
+      "rarity": 9,
+      "workSuitability": {
+        "handiwork": 3,
+        "mining": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "WingGolem",
+      "slug": "knocklem",
+      "name": "Knocklem",
+      "paldeckNumber": 159,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 260,
+      "rarity": 9,
+      "workSuitability": {
+        "gathering": 4,
+        "mining": 7,
+        "transporting": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "WingGolem_Fire",
+      "slug": "knocklem-ignis",
+      "name": "Knocklem Ignis",
+      "paldeckNumber": 159,
+      "paldeckSuffix": "B",
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 210,
+      "rarity": 10,
+      "workSuitability": {
+        "kindling": 5,
+        "mining": 7,
+        "transporting": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "WhiteShieldDragon",
+      "slug": "silvegis",
+      "name": "Silvegis",
+      "paldeckNumber": 160,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon"
+      ],
+      "breedingPower": 560,
+      "rarity": 8,
+      "workSuitability": {
+        "lumbering": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "BlueThunderHorse",
+      "slug": "azurmane",
+      "name": "Azurmane",
+      "paldeckNumber": 161,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 420,
+      "rarity": 7,
+      "workSuitability": {
+        "generatingElectricity": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "LongCat",
+      "slug": "valentail",
+      "name": "Valentail",
+      "paldeckNumber": 162,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 1900,
+      "rarity": 2,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "ElecSnail",
+      "slug": "snock",
+      "name": "Snock",
+      "paldeckNumber": 163,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 1780,
+      "rarity": 2,
+      "workSuitability": {
+        "generatingElectricity": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "ElecSnail_Ground",
+      "slug": "snock-terra",
+      "name": "Snock Terra",
+      "paldeckNumber": 163,
+      "paldeckSuffix": "B",
+      "elements": [
+        "electric",
+        "ground"
+      ],
+      "breedingPower": 1500,
+      "rarity": 3,
+      "workSuitability": {
+        "generatingElectricity": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "DandelionGirl",
+      "slug": "souffline",
+      "name": "Souffline",
+      "paldeckNumber": 164,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 2000,
+      "rarity": 3,
+      "workSuitability": {
+        "planting": 2,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "BrownRabbit",
+      "slug": "lapiron",
+      "name": "Lapiron",
+      "paldeckNumber": 165,
+      "paldeckSuffix": null,
+      "elements": [
+        "ground"
+      ],
+      "breedingPower": 1680,
+      "rarity": 3,
+      "workSuitability": {
+        "handiwork": 3,
+        "gathering": 4,
+        "mining": 2,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "HoodGhost",
+      "slug": "hoodle",
+      "name": "Hoodle",
+      "paldeckNumber": 166,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1770,
+      "rarity": 3,
+      "workSuitability": {
+        "handiwork": 1,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "ElecLizard",
+      "slug": "slowatt",
+      "name": "Slowatt",
+      "paldeckNumber": 167,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 1750,
+      "rarity": 4,
+      "workSuitability": {
+        "generatingElectricity": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "OniGhostGirl",
+      "slug": "bakemi",
+      "name": "Bakemi",
+      "paldeckNumber": 168,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1540,
+      "rarity": 4,
+      "workSuitability": {
+        "handiwork": 3,
+        "medicineProduction": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "KingSunfish",
+      "slug": "solmora",
+      "name": "Solmora",
+      "paldeckNumber": 169,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 1370,
+      "rarity": 4,
+      "workSuitability": {
+        "watering": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "KingSunfish_Thunder",
+      "slug": "solmora-lux",
+      "name": "Solmora Lux",
+      "paldeckNumber": 169,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water",
+        "electric"
+      ],
+      "breedingPower": 1000,
+      "rarity": 5,
+      "workSuitability": {
+        "watering": 4,
+        "generatingElectricity": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "SleeveRabbit",
+      "slug": "lapure",
+      "name": "Lapure",
+      "paldeckNumber": 170,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 810,
+      "rarity": 4,
+      "workSuitability": {
+        "handiwork": 6,
+        "gathering": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "GhostDragon",
+      "slug": "eidrolon",
+      "name": "Eidrolon",
+      "paldeckNumber": 171,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon",
+        "dark"
+      ],
+      "breedingPower": 300,
+      "rarity": 7,
+      "workSuitability": {
+        "transporting": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "GhostDragon_Fire",
+      "slug": "eidrolon-ignis",
+      "name": "Eidrolon Ignis",
+      "paldeckNumber": 171,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dragon",
+        "fire"
+      ],
+      "breedingPower": 140,
+      "rarity": 8,
+      "workSuitability": {
+        "kindling": 6,
+        "transporting": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "ThunderFluffyBird",
+      "slug": "dynamoff",
+      "name": "Dynamoff",
+      "paldeckNumber": 172,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 1400,
+      "rarity": 6,
+      "workSuitability": {
+        "generatingElectricity": 6,
+        "gathering": 3,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "RedFlowerBird",
+      "slug": "tropicaw",
+      "name": "Tropicaw",
+      "paldeckNumber": 173,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 1350,
+      "rarity": 5,
+      "workSuitability": {
+        "planting": 5,
+        "gathering": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "FoxExorcist",
+      "slug": "flaracle",
+      "name": "Flaracle",
+      "paldeckNumber": 174,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 390,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 7,
+        "handiwork": 6,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "LotusDragon",
+      "slug": "ophydia",
+      "name": "Ophydia",
+      "paldeckNumber": 175,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "water"
+      ],
+      "breedingPower": 230,
+      "rarity": 9,
+      "workSuitability": {
+        "watering": 5,
+        "planting": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "ClownRabbit",
+      "slug": "dupin",
+      "name": "Dupin",
+      "paldeckNumber": 176,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 520,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 7,
+        "handiwork": 5,
+        "medicineProduction": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "ThiefBird",
+      "slug": "roujay",
+      "name": "Roujay",
+      "paldeckNumber": 177,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 530,
+      "rarity": 5,
+      "workSuitability": {
+        "gathering": 5,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "SnakeGirl",
+      "slug": "venusa",
+      "name": "Venusa",
+      "paldeckNumber": 178,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 970,
+      "rarity": 5,
+      "workSuitability": {
+        "handiwork": 6,
+        "gathering": 6,
+        "medicineProduction": 5,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "MushroomLady",
+      "slug": "mycora",
+      "name": "Mycora",
+      "paldeckNumber": 179,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 760,
+      "rarity": 6,
+      "workSuitability": {
+        "planting": 6,
+        "handiwork": 4,
+        "gathering": 4,
+        "medicineProduction": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "LanternButler",
+      "slug": "loomen",
+      "name": "Loomen",
+      "paldeckNumber": 180,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "fire"
+      ],
+      "breedingPower": 890,
+      "rarity": 5,
+      "workSuitability": {
+        "kindling": 4,
+        "handiwork": 4,
+        "medicineProduction": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "MoonChild",
+      "slug": "wistella",
+      "name": "Wistella",
+      "paldeckNumber": 181,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 1180,
+      "rarity": 2,
+      "workSuitability": {
+        "handiwork": 6,
+        "medicineProduction": 6,
+        "transporting": 1
+      },
+      "description": ""
+    },
+    {
+      "id": "MonochromeQueen",
+      "slug": "solenne",
+      "name": "Solenne",
+      "paldeckNumber": 182,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "neutral"
+      ],
+      "breedingPower": 280,
+      "rarity": 7,
+      "workSuitability": {
+        "handiwork": 8,
+        "gathering": 4,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "KabukiMan",
+      "slug": "renjishi",
+      "name": "Renjishi",
+      "paldeckNumber": 183,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 290,
+      "rarity": 7,
+      "workSuitability": {
+        "kindling": 8,
+        "handiwork": 6,
+        "gathering": 5,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "DomeArmorDragon",
+      "slug": "aegidron",
+      "name": "Aegidron",
+      "paldeckNumber": 184,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon",
+        "ground"
+      ],
+      "breedingPower": 30,
+      "rarity": 8,
+      "workSuitability": {
+        "mining": 8
+      },
+      "description": ""
+    },
+    {
+      "id": "ElecPanda",
+      "slug": "grizzbolt",
+      "name": "Grizzbolt",
+      "paldeckNumber": 185,
+      "paldeckSuffix": null,
+      "elements": [
+        "electric"
+      ],
+      "breedingPower": 1020,
+      "rarity": 8,
+      "workSuitability": {
+        "generatingElectricity": 5,
+        "handiwork": 4,
+        "lumbering": 3,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "LilyQueen",
+      "slug": "lyleen",
+      "name": "Lyleen",
+      "paldeckNumber": 186,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 240,
+      "rarity": 9,
+      "workSuitability": {
+        "planting": 7,
+        "handiwork": 5,
+        "gathering": 6,
+        "medicineProduction": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "LilyQueen_Dark",
+      "slug": "lyleen-noct",
+      "name": "Lyleen Noct",
+      "paldeckNumber": 186,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 220,
+      "rarity": 10,
+      "workSuitability": {
+        "handiwork": 5,
+        "gathering": 6,
+        "medicineProduction": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "ThunderDragonMan",
+      "slug": "orserk",
+      "name": "Orserk",
+      "paldeckNumber": 187,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon",
+        "electric"
+      ],
+      "breedingPower": 120,
+      "rarity": 9,
+      "workSuitability": {
+        "generatingElectricity": 8,
+        "handiwork": 3,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "Horus",
+      "slug": "faleris",
+      "name": "Faleris",
+      "paldeckNumber": 188,
+      "paldeckSuffix": null,
+      "elements": [
+        "fire"
+      ],
+      "breedingPower": 500,
+      "rarity": 9,
+      "workSuitability": {
+        "kindling": 6,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "Horus_Water",
+      "slug": "faleris-aqua",
+      "name": "Faleris Aqua",
+      "paldeckNumber": 188,
+      "paldeckSuffix": "B",
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 450,
+      "rarity": 9,
+      "workSuitability": {
+        "watering": 6,
+        "transporting": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "BlackGriffon",
+      "slug": "shadowbeak",
+      "name": "Shadowbeak",
+      "paldeckNumber": 189,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 550,
+      "rarity": 10,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "MoonQueen",
+      "slug": "selyne",
+      "name": "Selyne",
+      "paldeckNumber": 190,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "neutral"
+      ],
+      "breedingPower": 360,
+      "rarity": 9,
+      "workSuitability": {
+        "handiwork": 7,
+        "medicineProduction": 6,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "SnowTigerBeastman",
+      "slug": "bastigor",
+      "name": "Bastigor",
+      "paldeckNumber": 191,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 50,
+      "rarity": 8,
+      "workSuitability": {
+        "lumbering": 6,
+        "mining": 5,
+        "cooling": 8
+      },
+      "description": ""
+    },
+    {
+      "id": "BlueSkyDragon",
+      "slug": "shaolong",
+      "name": "Shaolong",
+      "paldeckNumber": 192,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon",
+        "water"
+      ],
+      "breedingPower": 40,
+      "rarity": 9,
+      "workSuitability": {
+        "watering": 8,
+        "gathering": 5
+      },
+      "description": ""
+    },
+    {
+      "id": "Mothman",
+      "slug": "silvance",
+      "name": "Silvance",
+      "paldeckNumber": 193,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass"
+      ],
+      "breedingPower": 80,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 6,
+        "handiwork": 6,
+        "gathering": 4,
+        "medicineProduction": 8,
+        "transporting": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "FlowerPrince",
+      "slug": "dandilord",
+      "name": "Dandilord",
+      "paldeckNumber": 194,
+      "paldeckSuffix": null,
+      "elements": [
+        "grass",
+        "dark"
+      ],
+      "breedingPower": 60,
+      "rarity": 8,
+      "workSuitability": {
+        "planting": 8,
+        "handiwork": 6,
+        "gathering": 5,
+        "medicineProduction": 6,
+        "transporting": 3
+      },
+      "description": ""
+    },
+    {
+      "id": "NightLady",
+      "slug": "bellanoir",
+      "name": "Bellanoir",
+      "paldeckNumber": 195,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 620,
+      "rarity": 20,
+      "workSuitability": {
+        "handiwork": 5,
+        "medicineProduction": 5,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "NightLady_Dark",
+      "slug": "bellanoir-libero",
+      "name": "Bellanoir Libero",
+      "paldeckNumber": 195,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 130,
+      "rarity": 20,
+      "workSuitability": {
+        "handiwork": 6,
+        "medicineProduction": 7,
+        "transporting": 4
+      },
+      "description": ""
+    },
+    {
+      "id": "DarkMechaDragon",
+      "slug": "xenolord",
+      "name": "Xenolord",
+      "paldeckNumber": 196,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark",
+        "dragon"
+      ],
+      "breedingPower": 400,
+      "rarity": 8,
+      "workSuitability": {
+        "gathering": 2
+      },
+      "description": ""
+    },
+    {
+      "id": "LegendDeer",
+      "slug": "hartalis",
+      "name": "Hartalis",
+      "paldeckNumber": 197,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 90,
+      "rarity": 10,
+      "workSuitability": {
+        "gathering": 7,
+        "lumbering": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "SaintCentaur",
+      "slug": "paladius",
+      "name": "Paladius",
+      "paldeckNumber": 198,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 180,
+      "rarity": 20,
+      "workSuitability": {
+        "lumbering": 6,
+        "mining": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "BlackCentaur",
+      "slug": "necromus",
+      "name": "Necromus",
+      "paldeckNumber": 199,
+      "paldeckSuffix": null,
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 190,
+      "rarity": 20,
+      "workSuitability": {
+        "lumbering": 6,
+        "mining": 6
+      },
+      "description": ""
+    },
+    {
+      "id": "IceHorse",
+      "slug": "frostallion",
+      "name": "Frostallion",
+      "paldeckNumber": 200,
+      "paldeckSuffix": null,
+      "elements": [
+        "ice"
+      ],
+      "breedingPower": 150,
+      "rarity": 20,
+      "workSuitability": {
+        "cooling": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "IceHorse_Dark",
+      "slug": "frostallion-noct",
+      "name": "Frostallion Noct",
+      "paldeckNumber": 200,
+      "paldeckSuffix": "B",
+      "elements": [
+        "dark"
+      ],
+      "breedingPower": 110,
+      "rarity": 20,
+      "workSuitability": {
+        "gathering": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "PoseidonOrca",
+      "slug": "neptilius",
+      "name": "Neptilius",
+      "paldeckNumber": 201,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 160,
+      "rarity": 20,
+      "workSuitability": {
+        "watering": 7
+      },
+      "description": ""
+    },
+    {
+      "id": "JetDragon",
+      "slug": "jetragon",
+      "name": "Jetragon",
+      "paldeckNumber": 202,
+      "paldeckSuffix": null,
+      "elements": [
+        "dragon"
+      ],
+      "breedingPower": 70,
+      "rarity": 20,
+      "workSuitability": {
+        "gathering": 8
+      },
+      "description": ""
+    },
+    {
+      "id": "KingWhale",
+      "slug": "panthalus",
+      "name": "Panthalus",
+      "paldeckNumber": 203,
+      "paldeckSuffix": null,
+      "elements": [
+        "water"
+      ],
+      "breedingPower": 20,
+      "rarity": 10,
+      "workSuitability": {},
+      "description": ""
+    },
+    {
+      "id": "WorldTreeDragon",
+      "slug": "astralym",
+      "name": "Astralym",
+      "paldeckNumber": 204,
+      "paldeckSuffix": null,
+      "elements": [
+        "neutral"
+      ],
+      "breedingPower": 10,
+      "rarity": 10,
+      "workSuitability": {},
+      "description": ""
+    }
+  ]
+}

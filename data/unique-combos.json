@@ -1,0 +1,626 @@
+{
+  "meta": {
+    "game": "Palworld",
+    "steamBuildId": "25247047",
+    "generatedAt": "2026-10-30T01:30:49.521Z",
+    "comboCount": 81,
+    "selfBreedOnlyCount": 23,
+    "notes": [
+      "IDs match the id field in data/pals.json.",
+      "A null gender means either gender works.",
+      "Pals that appear as a combo child cannot be produced by the normal breeding-power formula.",
+      "selfBreedOnly Pals can only be bred by pairing two of the same Pal.",
+      "notBreedable Pals cannot be used in the Breeding Farm at all.",
+      "Manual rule for KingWhale: Panthalus cannot be placed in the Breeding Farm.",
+      "Manual rule for WorldTreeDragon: Astralym cannot be placed in the Breeding Farm.",
+      "Manual rule for PlantSlime_Flower: Shares Gumoss's breeding power; the game always picks regular Gumoss.",
+      "Skipped game rows that reference Pals missing from pals.json: BeardedDragon, BlackFurDragon, DarkMutant, ElecLion, GrassDragon, PinkKangaroo, WaterLizard, YakushimaBoss001, YakushimaBoss001_Small, YakushimaMonster001, YakushimaMonster001_Blue, YakushimaMonster001_Pink, YakushimaMonster001_Purple, YakushimaMonster001_Rainbow, YakushimaMonster001_Red, YakushimaMonster002, YakushimaMonster003, YakushimaMonster003_Purple."
+    ],
+    "sources": [
+      {
+        "name": "palworld-atlas-data",
+        "url": "https://github.com/Awy64/palworld-atlas-data",
+        "license": "MIT, Copyright (c) 2026 Adam Young"
+      }
+    ],
+    "notice": "Palworld and all Pal names are the property of Pocketpair, Inc."
+  },
+  "combos": [
+    {
+      "parentA": "BluePlatypus",
+      "parentAGender": null,
+      "parentB": "LavaGirl",
+      "parentBGender": null,
+      "child": "BluePlatypus_Fire"
+    },
+    {
+      "parentA": "FlyingManta",
+      "parentAGender": null,
+      "parentB": "Kirin",
+      "parentBGender": null,
+      "child": "FlyingManta_Thunder"
+    },
+    {
+      "parentA": "KendoFrog",
+      "parentAGender": null,
+      "parentB": "Ronin_Dark",
+      "parentBGender": null,
+      "child": "KendoFrog_Dark"
+    },
+    {
+      "parentA": "Hedgehog",
+      "parentAGender": null,
+      "parentB": "Penguin",
+      "parentBGender": null,
+      "child": "Hedgehog_Ice"
+    },
+    {
+      "parentA": "Penguin",
+      "parentAGender": null,
+      "parentB": "ElecCat",
+      "parentBGender": null,
+      "child": "Penguin_Electric"
+    },
+    {
+      "parentA": "CaptainPenguin",
+      "parentAGender": null,
+      "parentB": "ThunderDog",
+      "parentBGender": null,
+      "child": "CaptainPenguin_Black"
+    },
+    {
+      "parentA": "KingAlpaca",
+      "parentAGender": null,
+      "parentB": "IceDeer",
+      "parentBGender": null,
+      "child": "KingAlpaca_Ice"
+    },
+    {
+      "parentA": "Monkey",
+      "parentAGender": null,
+      "parentB": "LavaGirl",
+      "parentBGender": null,
+      "child": "Monkey_Fire"
+    },
+    {
+      "parentA": "Bastet",
+      "parentAGender": null,
+      "parentB": "Penguin",
+      "parentBGender": null,
+      "child": "Bastet_Ice"
+    },
+    {
+      "parentA": "Kitsunebi",
+      "parentAGender": null,
+      "parentB": "IceFox",
+      "parentBGender": null,
+      "child": "Kitsunebi_Ice"
+    },
+    {
+      "parentA": "NegativeOctopus",
+      "parentAGender": null,
+      "parentB": "PinkRabbit",
+      "parentBGender": null,
+      "child": "NegativeOctopus_Neutral"
+    },
+    {
+      "parentA": "Deer",
+      "parentAGender": null,
+      "parentB": "WindChimes",
+      "parentBGender": null,
+      "child": "Deer_Ground"
+    },
+    {
+      "parentA": "BerryGoat",
+      "parentAGender": null,
+      "parentB": "PurpleSpider",
+      "parentBGender": null,
+      "child": "BerryGoat_Dark"
+    },
+    {
+      "parentA": "TentacleTurtle",
+      "parentAGender": null,
+      "parentB": "DrillGame",
+      "parentBGender": null,
+      "child": "TentacleTurtle_Ground"
+    },
+    {
+      "parentA": "WindChimes",
+      "parentAGender": null,
+      "parentB": "MopBaby",
+      "parentBGender": null,
+      "child": "WindChimes_Ice"
+    },
+    {
+      "parentA": "SweetsSheep",
+      "parentAGender": null,
+      "parentB": "SmallArmadillo",
+      "parentBGender": null,
+      "child": "SweetsSheep_Ground"
+    },
+    {
+      "parentA": "BlueDragon",
+      "parentAGender": null,
+      "parentB": "SnowPeafowl",
+      "parentBGender": null,
+      "child": "BlueDragon_Ice"
+    },
+    {
+      "parentA": "PinkRabbit",
+      "parentAGender": null,
+      "parentB": "LittleBriarRose",
+      "parentBGender": null,
+      "child": "PinkRabbit_Grass"
+    },
+    {
+      "parentA": "OctopusGirl",
+      "parentAGender": null,
+      "parentB": "LongCat",
+      "parentBGender": null,
+      "child": "OctopusGirl_Neutral"
+    },
+    {
+      "parentA": "Kirin",
+      "parentAGender": null,
+      "parentB": "SnowPeafowl",
+      "parentBGender": null,
+      "child": "Kirin_Ice"
+    },
+    {
+      "parentA": "SharkKid",
+      "parentAGender": null,
+      "parentB": "FlameBambi",
+      "parentBGender": null,
+      "child": "SharkKid_Fire"
+    },
+    {
+      "parentA": "Werewolf",
+      "parentAGender": null,
+      "parentB": "MopKing",
+      "parentBGender": null,
+      "child": "Werewolf_Ice"
+    },
+    {
+      "parentA": "FairyDragon",
+      "parentAGender": null,
+      "parentB": "Serpent",
+      "parentBGender": null,
+      "child": "FairyDragon_Water"
+    },
+    {
+      "parentA": "BirdDragon",
+      "parentAGender": null,
+      "parentB": "IceFox",
+      "parentBGender": null,
+      "child": "BirdDragon_Ice"
+    },
+    {
+      "parentA": "IceSeal",
+      "parentAGender": null,
+      "parentB": "Serpent_Ground",
+      "parentBGender": null,
+      "child": "IceSeal_Ground"
+    },
+    {
+      "parentA": "LizardMan",
+      "parentAGender": null,
+      "parentB": "LavaGirl",
+      "parentBGender": null,
+      "child": "LizardMan_Fire"
+    },
+    {
+      "parentA": "Gorilla",
+      "parentAGender": null,
+      "parentB": "SmallArmadillo",
+      "parentBGender": null,
+      "child": "Gorilla_Ground"
+    },
+    {
+      "parentA": "Serpent",
+      "parentAGender": null,
+      "parentB": "LazyCatfish",
+      "parentBGender": null,
+      "child": "Serpent_Ground"
+    },
+    {
+      "parentA": "RobinHood",
+      "parentAGender": null,
+      "parentB": "CuteMole",
+      "parentBGender": null,
+      "child": "RobinHood_Ground"
+    },
+    {
+      "parentA": "CatMage",
+      "parentAGender": "male",
+      "parentB": "FoxMage",
+      "parentBGender": "female",
+      "child": "FoxMage_Dark"
+    },
+    {
+      "parentA": "CatMage",
+      "parentAGender": "female",
+      "parentB": "FoxMage",
+      "parentBGender": "male",
+      "child": "CatMage_Fire"
+    },
+    {
+      "parentA": "HadesBird",
+      "parentAGender": null,
+      "parentB": "ThunderBird",
+      "parentBGender": null,
+      "child": "HadesBird_Electric"
+    },
+    {
+      "parentA": "GrassMinotaur",
+      "parentAGender": null,
+      "parentB": "RockBeast_Ice",
+      "parentBGender": null,
+      "child": "GrassMinotaur_Ice"
+    },
+    {
+      "parentA": "FengyunDeeper",
+      "parentAGender": null,
+      "parentB": "BlueThunderHorse",
+      "parentBGender": null,
+      "child": "FengyunDeeper_Electric"
+    },
+    {
+      "parentA": "FlowerDinosaur",
+      "parentAGender": null,
+      "parentB": "ThunderDog",
+      "parentBGender": null,
+      "child": "FlowerDinosaur_Electric"
+    },
+    {
+      "parentA": "Ronin",
+      "parentAGender": null,
+      "parentB": "CandleGhost",
+      "parentBGender": null,
+      "child": "Ronin_Dark"
+    },
+    {
+      "parentA": "GrassMammoth",
+      "parentAGender": null,
+      "parentB": "Yeti",
+      "parentBGender": null,
+      "child": "GrassMammoth_Ice"
+    },
+    {
+      "parentA": "StuffedShark",
+      "parentAGender": null,
+      "parentB": "SharkKid_Fire",
+      "parentBGender": null,
+      "child": "StuffedShark_Fire"
+    },
+    {
+      "parentA": "FlowerDoll",
+      "parentAGender": null,
+      "parentB": "Ronin",
+      "parentBGender": null,
+      "child": "FlowerDoll_Fire"
+    },
+    {
+      "parentA": "Baphomet",
+      "parentAGender": null,
+      "parentB": "GhostBeast",
+      "parentBGender": null,
+      "child": "Baphomet_Dark"
+    },
+    {
+      "parentA": "RaijinDaughter",
+      "parentAGender": null,
+      "parentB": "MysteryMask",
+      "parentBGender": null,
+      "child": "RaijinDaughter_Water"
+    },
+    {
+      "parentA": "FireKirin",
+      "parentAGender": null,
+      "parentB": "CatMage",
+      "parentBGender": null,
+      "child": "FireKirin_Dark"
+    },
+    {
+      "parentA": "LazyDragon",
+      "parentAGender": null,
+      "parentB": "ElecCat",
+      "parentBGender": null,
+      "child": "LazyDragon_Electric"
+    },
+    {
+      "parentA": "ThunderBird",
+      "parentAGender": null,
+      "parentB": "SnowPeafowl",
+      "parentBGender": null,
+      "child": "ThunderBird_Ice"
+    },
+    {
+      "parentA": "GhostAnglerfish",
+      "parentAGender": null,
+      "parentB": "CandleGhost",
+      "parentBGender": null,
+      "child": "GhostAnglerfish_Fire"
+    },
+    {
+      "parentA": "ThunderDog",
+      "parentAGender": null,
+      "parentB": "IceFox",
+      "parentBGender": null,
+      "child": "ThunderDog_Ice"
+    },
+    {
+      "parentA": "DarkScorpion",
+      "parentAGender": null,
+      "parentB": "WingGolem",
+      "parentBGender": null,
+      "child": "DarkScorpion_Ground"
+    },
+    {
+      "parentA": "CactusDoll",
+      "parentAGender": null,
+      "parentB": "BlueberryFairy",
+      "parentBGender": null,
+      "child": "CactusDoll_Dark"
+    },
+    {
+      "parentA": "GrassPanda",
+      "parentAGender": null,
+      "parentB": "ElecPanda",
+      "parentBGender": null,
+      "child": "GrassPanda_Electric"
+    },
+    {
+      "parentA": "WeaselDragon",
+      "parentAGender": null,
+      "parentB": "FlameBuffalo",
+      "parentBGender": null,
+      "child": "WeaselDragon_Fire"
+    },
+    {
+      "parentA": "VolcanoDragon",
+      "parentAGender": null,
+      "parentB": "VolcanicMonster_Ice",
+      "parentBGender": null,
+      "child": "VolcanoDragon_Ice"
+    },
+    {
+      "parentA": "SakuraSaurus",
+      "parentAGender": null,
+      "parentB": "BluePlatypus",
+      "parentBGender": null,
+      "child": "SakuraSaurus_Water"
+    },
+    {
+      "parentA": "LazyCatfish",
+      "parentAGender": null,
+      "parentB": "Deer_Ground",
+      "parentBGender": null,
+      "child": "LazyCatfish_Gold"
+    },
+    {
+      "parentA": "AmaterasuWolf",
+      "parentAGender": null,
+      "parentB": "BadCatgirl",
+      "parentBGender": null,
+      "child": "AmaterasuWolf_Dark"
+    },
+    {
+      "parentA": "Manticore",
+      "parentAGender": null,
+      "parentB": "CatVampire",
+      "parentBGender": null,
+      "child": "Manticore_Dark"
+    },
+    {
+      "parentA": "HerculesBeetle",
+      "parentAGender": null,
+      "parentB": "DrillGame",
+      "parentBGender": null,
+      "child": "HerculesBeetle_Ground"
+    },
+    {
+      "parentA": "WhiteMoth",
+      "parentAGender": null,
+      "parentB": "SleeveRabbit",
+      "parentBGender": null,
+      "child": "WhiteMoth_Neutral"
+    },
+    {
+      "parentA": "Umihebi",
+      "parentAGender": null,
+      "parentB": "Manticore",
+      "parentBGender": null,
+      "child": "Umihebi_Fire"
+    },
+    {
+      "parentA": "Suzaku",
+      "parentAGender": null,
+      "parentB": "Umihebi",
+      "parentBGender": null,
+      "child": "Suzaku_Water"
+    },
+    {
+      "parentA": "SkyDragon",
+      "parentAGender": null,
+      "parentB": "LeafPrincess",
+      "parentBGender": null,
+      "child": "SkyDragon_Grass"
+    },
+    {
+      "parentA": "SwordCutlassfish",
+      "parentAGender": null,
+      "parentB": "SharkKid_Fire",
+      "parentBGender": null,
+      "child": "SwordCutlassfish_Fire"
+    },
+    {
+      "parentA": "VolcanicMonster",
+      "parentAGender": null,
+      "parentB": "IceFox",
+      "parentBGender": null,
+      "child": "VolcanicMonster_Ice"
+    },
+    {
+      "parentA": "NightBlueHorse",
+      "parentAGender": null,
+      "parentB": "WhiteDeer",
+      "parentBGender": null,
+      "child": "NightBlueHorse_Neutral"
+    },
+    {
+      "parentA": "RockBeast",
+      "parentAGender": null,
+      "parentB": "Yeti",
+      "parentBGender": null,
+      "child": "RockBeast_Ice"
+    },
+    {
+      "parentA": "WhiteTiger",
+      "parentAGender": null,
+      "parentB": "FeatherOstrich",
+      "parentBGender": null,
+      "child": "WhiteTiger_Ground"
+    },
+    {
+      "parentA": "GrassGolem",
+      "parentAGender": null,
+      "parentB": "CandleGhost",
+      "parentBGender": null,
+      "child": "GrassGolem_Dark"
+    },
+    {
+      "parentA": "ScorpionMan",
+      "parentAGender": null,
+      "parentB": "HadesBird_Electric",
+      "parentBGender": null,
+      "child": "ScorpionMan_Electric"
+    },
+    {
+      "parentA": "CubeTurtle",
+      "parentAGender": null,
+      "parentB": "WhiteDeer",
+      "parentBGender": null,
+      "child": "CubeTurtle_Neutral"
+    },
+    {
+      "parentA": "GhostRabbit",
+      "parentAGender": null,
+      "parentB": "FlowerDoll",
+      "parentBGender": null,
+      "child": "GhostRabbit_Grass"
+    },
+    {
+      "parentA": "BlackPuppy",
+      "parentAGender": null,
+      "parentB": "IceCrocodile",
+      "parentBGender": null,
+      "child": "BlackPuppy_Ice"
+    },
+    {
+      "parentA": "IceNarwhal",
+      "parentAGender": null,
+      "parentB": "WeaselDragon_Fire",
+      "parentBGender": null,
+      "child": "IceNarwhal_Fire"
+    },
+    {
+      "parentA": "GoldenHorse",
+      "parentAGender": null,
+      "parentB": "Deer_Ground",
+      "parentBGender": null,
+      "child": "WhiteDeer"
+    },
+    {
+      "parentA": "WhiteDeer",
+      "parentAGender": null,
+      "parentB": "AmaterasuWolf_Dark",
+      "parentBGender": null,
+      "child": "WhiteDeer_Dark"
+    },
+    {
+      "parentA": "WingGolem",
+      "parentAGender": null,
+      "parentB": "RedArmorBird",
+      "parentBGender": null,
+      "child": "WingGolem_Fire"
+    },
+    {
+      "parentA": "ElecSnail",
+      "parentAGender": null,
+      "parentB": "TentacleTurtle_Ground",
+      "parentBGender": null,
+      "child": "ElecSnail_Ground"
+    },
+    {
+      "parentA": "KingSunfish",
+      "parentAGender": null,
+      "parentB": "ElecLizard",
+      "parentBGender": null,
+      "child": "KingSunfish_Thunder"
+    },
+    {
+      "parentA": "GhostDragon",
+      "parentAGender": null,
+      "parentB": "Suzaku",
+      "parentBGender": null,
+      "child": "GhostDragon_Fire"
+    },
+    {
+      "parentA": "LilyQueen",
+      "parentAGender": null,
+      "parentB": "DarkScorpion",
+      "parentBGender": null,
+      "child": "LilyQueen_Dark"
+    },
+    {
+      "parentA": "Horus",
+      "parentAGender": null,
+      "parentB": "Umihebi",
+      "parentBGender": null,
+      "child": "Horus_Water"
+    },
+    {
+      "parentA": "NightLady",
+      "parentAGender": null,
+      "parentB": "NightLady_Dark",
+      "parentBGender": null,
+      "child": "NightLady"
+    },
+    {
+      "parentA": "IceHorse",
+      "parentAGender": null,
+      "parentB": "HadesBird",
+      "parentBGender": null,
+      "child": "IceHorse_Dark"
+    }
+  ],
+  "selfBreedOnly": [
+    "PlantSlime_Flower",
+    "KingBahamut_Dragon",
+    "MimicDog",
+    "DarkAlien",
+    "WhiteAlienDragon",
+    "ElecPanda",
+    "LilyQueen",
+    "ThunderDragonMan",
+    "Horus",
+    "BlackGriffon",
+    "MoonQueen",
+    "SnowTigerBeastman",
+    "BlueSkyDragon",
+    "Mothman",
+    "FlowerPrince",
+    "NightLady_Dark",
+    "DarkMechaDragon",
+    "LegendDeer",
+    "SaintCentaur",
+    "BlackCentaur",
+    "IceHorse",
+    "PoseidonOrca",
+    "JetDragon"
+  ],
+  "notBreedable": [
+    "KingWhale",
+    "WorldTreeDragon"
+  ]
+}
