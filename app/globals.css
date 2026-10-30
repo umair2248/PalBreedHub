@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
+/* Light theme */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f7fb;
+  --surface: #ffffff;
+  --surface-hover: #eef2f8;
+  --line: #dce3ee;
+  --foreground: #0f172a;
+  --muted: #55627a;
+  --accent: #0278b8;
+  --accent-soft: #e0f1fb;
+  --accent-contrast: #ffffff;
+}
+
+/* Dark theme, follows the device setting */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0f1c;
+    --surface: #111827;
+    --surface-hover: #1a2333;
+    --line: #233049;
+    --foreground: #e7edf6;
+    --muted: #94a3bc;
+    --accent: #38bdf8;
+    --accent-soft: #0c2a3d;
+    --accent-contrast: #04121c;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-line: var(--line);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-contrast: var(--accent-contrast);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light dark;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

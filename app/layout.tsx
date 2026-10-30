@@ -1,5 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import SiteFooter from "@/components/SiteFooter";
+import SiteHeader from "@/components/SiteHeader";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +15,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Palworld Breeding Calculator",
+  title: {
+    default: "Palworld Breeding Calculator | PalBreedHub",
+    template: "%s | PalBreedHub",
+  },
   description: "Find the right parent Pals to breed any Pal in Palworld.",
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#111827" },
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -23,7 +35,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col font-sans">
+        <SiteHeader />
+        <main className="flex flex-1 flex-col">{children}</main>
+        <SiteFooter />
+      </body>
     </html>
   );
 }
