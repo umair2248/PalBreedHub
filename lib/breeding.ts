@@ -85,6 +85,28 @@ function findUniqueCombo(a: Pal, b: Pal, genders: ParentGenders): UniqueCombo | 
   );
 }
 
+/** True when this pair has a fixed unique-combo result instead of the breeding-power formula. */
+export function isUniqueCombo(a: Pal, b: Pal): boolean {
+  return combos.some((c) => (c.parentA === a.id && c.parentB === b.id) || (c.parentA === b.id && c.parentB === a.id));
+}
+
+/** Every unique combo as Pals, for showcase lists. */
+export function getUniqueCombos(): ParentPair[] {
+  return combos.map((c) => ({
+    parentA: palById.get(c.parentA)!,
+    parentB: palById.get(c.parentB)!,
+    parentAGender: c.parentAGender,
+    parentBGender: c.parentBGender,
+  }));
+}
+
+export function getUniqueComboChild(pair: ParentPair): Pal {
+  return getChild(pair.parentA, pair.parentB, {
+    parentA: pair.parentAGender ?? undefined,
+    parentB: pair.parentBGender ?? undefined,
+  })!;
+}
+
 const childByTarget = new Map<number, Pal>();
 
 function getFormulaChild(a: Pal, b: Pal): Pal {
@@ -140,6 +162,39 @@ export function getChildOutcomes(parentA: Pal, parentB: Pal): BreedingOutcome[] 
     }
   }
   return outcomes;
+}
+
+/**
+ * Sorts the easiest pairs to get first, using the game's rarity value (lower = more common):
+ * first by the rarer of the two parents, then by their combined rarity.
+ * Breeding power doesn't work for this: every formula pair for a child has nearly the same total.
+ */
+export function compareByEase(a: ParentPair, b: ParentPair): number {
+  const rarest = (p: ParentPair) => Math.max(p.parentA.rarity, p.parentB.rarity);
+  const total = (p: ParentPair) => p.parentA.rarity + p.parentB.rarity;
+  return rarest(a) - rarest(b) || total(a) - total(b);
+}
+
+export interface Offspring {
+  child: Pal;
+  /** Partners that produce this child with the given Pal, with gender requirements when they matter */
+  partners: { partner: Pal; palGender: Gender | null; partnerGender: Gender | null }[];
+}
+
+/** Everything a Pal can breed, grouped by child, in Paldeck order. */
+export function getOffspring(pal: Pal): Offspring[] {
+  if (!canBreed(pal)) return [];
+  const byChild = new Map<string, Offspring>();
+  for (const partner of pals) {
+    if (!canBreed(partner)) continue;
+    for (const outcome of getChildOutcomes(pal, partner)) {
+      const entry = byChild.get(outcome.child.id) ?? { child: outcome.child, partners: [] };
+      entry.partners.push({ partner, palGender: outcome.parentAGender, partnerGender: outcome.parentBGender });
+      byChild.set(outcome.child.id, entry);
+    }
+  }
+  const order = new Map(pals.map((p, i) => [p.id, i]));
+  return [...byChild.values()].sort((a, b) => order.get(a.child.id)! - order.get(b.child.id)!);
 }
 
 let parentsByChild: Map<string, ParentPair[]> | undefined;

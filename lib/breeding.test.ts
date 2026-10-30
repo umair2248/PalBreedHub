@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getChild, getChildOutcomes, getPal, getParents, pals, type Pal } from "./breeding";
+import { compareByEase, getChild, getChildOutcomes, getPal, getParents, pals, type Pal } from "./breeding";
 
 function pal(name: string): Pal {
   const found = pals.find((p) => p.name === name);
@@ -136,6 +136,14 @@ describe("getParents", () => {
   it("includes a known pair", () => {
     const pairs = getParents(pal("Sibelyx")).map((p) => [p.parentA.name, p.parentB.name].sort().join(" + "));
     expect(pairs).toContain("Bushi + Penking");
+  });
+});
+
+describe("compareByEase", () => {
+  it("puts pairs of common Pals before pairs that need a rare Pal", () => {
+    const sorted = [...getParents(pal("Anubis"))].sort(compareByEase);
+    const rarest = (i: number) => Math.max(sorted[i].parentA.rarity, sorted[i].parentB.rarity);
+    for (let i = 1; i < sorted.length; i++) expect(rarest(i)).toBeGreaterThanOrEqual(rarest(i - 1));
   });
 });
 
