@@ -150,6 +150,39 @@ body {
 .animate-pop {
   animation: pop-in 0.25s ease-out both;
 }
+/* Top loading bar during page navigation (components/NavProgress.tsx) */
+.nav-progress {
+  position: fixed;
+  inset: 0 auto auto 0;
+  z-index: 100;
+  height: 3px;
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 10px var(--glow);
+}
+.nav-progress[data-phase="loading"] {
+  /* Fast at first, then crawls so it never looks finished before the page is */
+  width: 85%;
+  opacity: 1;
+  transition: width 8s cubic-bezier(0.1, 0.7, 0.2, 1);
+}
+.nav-progress[data-phase="done"] {
+  width: 100%;
+  opacity: 0;
+  transition:
+    width 0.2s ease-out,
+    opacity 0.3s ease 0.2s;
+}
+main {
+  transition: opacity 0.2s ease;
+}
+html[data-navigating] main {
+  opacity: 0.5;
+  cursor: progress;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

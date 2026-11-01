@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { pals } from "../lib/breeding";
 import { useI18n } from "./I18nProvider";
+import { startNavProgress } from "./NavProgress";
 import PalSelect from "./PalSelect";
 
 const options = [...pals].sort((a, b) => a.name.localeCompare(b.name));
@@ -18,7 +19,10 @@ export default function PalJump({ id }: { id: string }) {
       placeholder={t.nav.findPal}
       options={options}
       value={null}
-      onChange={(pal) => router.push(href(`/pals/${pal.slug}/`))}
+      onChange={(pal) => {
+        startNavProgress();
+        router.push(href(`/pals/${pal.slug}/`));
+      }}
       hideLabel
     />
   );

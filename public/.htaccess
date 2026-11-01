@@ -17,4 +17,9 @@ RewriteRule ^ https://palbreedhub.com%{REQUEST_URI} [L,R=301]
   <FilesMatch "\.(webp|png|jpe?g|svg|ico)$">
     Header set Cache-Control "public, max-age=2592000"
   </FilesMatch>
+  # Pages and their navigation data: browsers recheck after 5 minutes, the CDN keeps
+  # them a day (use "Clear cache" in hPanel after a deploy to show changes at once)
+  <FilesMatch "\.(html|txt|xml)$">
+    Header set Cache-Control "public, max-age=300, s-maxage=86400"
+  </FilesMatch>
 </IfModule>
