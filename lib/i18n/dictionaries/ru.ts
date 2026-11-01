@@ -24,6 +24,7 @@ const ru: Dictionary = {
     contact: "Контакты",
     privacy: "Конфиденциальность",
     disclaimer: "Отказ от ответственности",
+    terms: "Условия использования",
     findParents: "Найти родителей",
     findPal: "Найти пала...",
     jumpLabel: "Перейти к палу",
@@ -239,6 +240,7 @@ const ru: Dictionary = {
     contact: { title: "Контакты", description: "Свяжитесь с командой PalBreedHub." },
     privacy: { title: "Конфиденциальность", description: "Как PalBreedHub обращается с вашими данными." },
     disclaimer: { title: "Отказ от ответственности", description: "PalBreedHub — фанатский сайт, не связанный с Pocketpair." },
+    terms: { title: "Условия использования", description: "Правила использования PalBreedHub и его инструментов разведения." },
   },
 };
 

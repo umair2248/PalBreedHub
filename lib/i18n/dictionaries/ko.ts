@@ -24,6 +24,7 @@ const ko: Dictionary = {
     contact: "문의",
     privacy: "개인정보처리방침",
     disclaimer: "면책 조항",
+    terms: "이용 약관",
     findParents: "부모 찾기",
     findPal: "팰 검색...",
     jumpLabel: "팰로 이동",
@@ -234,6 +235,7 @@ const ko: Dictionary = {
     contact: { title: "문의", description: "PalBreedHub 팀에 문의하세요." },
     privacy: { title: "개인정보처리방침", description: "PalBreedHub의 개인정보 처리 방식." },
     disclaimer: { title: "면책 조항", description: "PalBreedHub는 팬 사이트이며 Pocketpair와 무관합니다." },
+    terms: { title: "이용 약관", description: "PalBreedHub와 교배 도구 이용 규칙입니다." },
   },
 };
 

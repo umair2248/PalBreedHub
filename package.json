@@ -16,6 +16,7 @@
     "validate:data": "node scripts/validate-pals.mjs"
   },
   "dependencies": {
+    "@next/third-parties": "16.4.3",
     "geist": "1.7.2",
     "marked": "^18.1.2",
     "next": "16.4.3",

@@ -24,6 +24,7 @@ const ja: Dictionary = {
     contact: "お問い合わせ",
     privacy: "プライバシーポリシー",
     disclaimer: "免責事項",
+    terms: "利用規約",
     findParents: "親を探す",
     findPal: "パルを検索...",
     jumpLabel: "パルへ移動",
@@ -234,6 +235,7 @@ const ja: Dictionary = {
     contact: { title: "お問い合わせ", description: "PalBreedHubチームへのお問い合わせ。" },
     privacy: { title: "プライバシーポリシー", description: "PalBreedHubでのデータの取り扱いについて。" },
     disclaimer: { title: "免責事項", description: "PalBreedHubはファンサイトであり、Pocketpairとは無関係です。" },
+    terms: { title: "利用規約", description: "PalBreedHubと交配ツールの利用に関するルールです。" },
   },
 };
 

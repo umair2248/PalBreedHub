@@ -24,6 +24,7 @@ const es: Dictionary = {
     contact: "Contacto",
     privacy: "Política de privacidad",
     disclaimer: "Aviso legal",
+    terms: "Términos de uso",
     findParents: "Buscar padres",
     findPal: "Buscar un Pal...",
     jumpLabel: "Ir a un Pal",
@@ -239,6 +240,7 @@ const es: Dictionary = {
     contact: { title: "Contacto", description: "Ponte en contacto con el equipo de PalBreedHub." },
     privacy: { title: "Política de privacidad", description: "Cómo trata PalBreedHub tus datos." },
     disclaimer: { title: "Aviso legal", description: "PalBreedHub es un sitio de fans y no está afiliado con Pocketpair." },
+    terms: { title: "Términos de uso", description: "Las condiciones para usar PalBreedHub y sus herramientas de cría." },
   },
 };
 

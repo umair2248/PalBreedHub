@@ -25,6 +25,7 @@ const en = {
     contact: "Contact",
     privacy: "Privacy Policy",
     disclaimer: "Disclaimer",
+    terms: "Terms of Use",
     findParents: "Find Parents",
     findPal: "Find a Pal...",
     jumpLabel: "Jump to a Pal",
@@ -251,6 +252,7 @@ const en = {
     contact: { title: "Contact", description: "Get in touch with the PalBreedHub team." },
     privacy: { title: "Privacy Policy", description: "How PalBreedHub handles your data." },
     disclaimer: { title: "Disclaimer", description: "PalBreedHub is a fan site and is not affiliated with Pocketpair." },
+    terms: { title: "Terms of Use", description: "The rules for using PalBreedHub and its breeding tools." },
   },
 };
 

@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
-import { SITE_NAME, SITE_URL } from "@/components/site-links";
+import { GA_MEASUREMENT_ID, SITE_NAME, SITE_URL } from "@/components/site-links";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -32,6 +33,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${GeistSans.variable} ${GeistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">{children}</body>
+      {/* Loads gtag.js after the page is interactive, so it doesn't slow down the first paint */}
+      {GA_MEASUREMENT_ID && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
     </html>
   );
 }

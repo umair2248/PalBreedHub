@@ -24,6 +24,7 @@ const zhTW: Dictionary = {
     contact: "聯絡我們",
     privacy: "隱私權政策",
     disclaimer: "免責聲明",
+    terms: "使用條款",
     findParents: "反查親代",
     findPal: "搜尋帕魯...",
     jumpLabel: "前往帕魯",
@@ -232,6 +233,7 @@ const zhTW: Dictionary = {
     contact: { title: "聯絡我們", description: "聯絡 PalBreedHub 團隊。" },
     privacy: { title: "隱私權政策", description: "PalBreedHub 如何處理你的資料。" },
     disclaimer: { title: "免責聲明", description: "PalBreedHub 是粉絲網站，與 Pocketpair 無關。" },
+    terms: { title: "使用條款", description: "使用 PalBreedHub 及其配種工具的規則。" },
   },
 };
 

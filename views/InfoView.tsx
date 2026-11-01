@@ -17,6 +17,7 @@ export const INFO_PATHS: Record<InfoPage, string> = {
   contact: "/contact/",
   privacy: "/privacy-policy/",
   disclaimer: "/disclaimer/",
+  terms: "/terms/",
 };
 
 export function infoMetadata(page: InfoPage, locale: Locale): Metadata {

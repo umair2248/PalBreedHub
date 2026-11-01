@@ -137,17 +137,41 @@ function HowItWorks({ t }: { t: Dictionary }) {
   );
 }
 
-function webAppJsonLd(locale: Locale, t: Dictionary): string {
+/** WebSite, Organization and WebApplication structured data for the home page. */
+function homeJsonLd(locale: Locale, t: Dictionary): string {
+  const url = `${SITE_URL}${localePath(locale, "/")}`;
+  const organization = { "@id": `${SITE_URL}/#organization` };
   const schema = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: `${SITE_NAME} - ${t.home.h1a} ${t.home.h1b}`,
-    url: `${SITE_URL}${localePath(locale, "/")}`,
-    inLanguage: LOCALE_INFO[locale].hreflang,
-    applicationCategory: "GameApplication",
-    operatingSystem: "Any",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    description: t.meta.homeDescription,
+    "@graph": [
+      {
+        "@type": "Organization",
+        ...organization,
+        name: SITE_NAME,
+        url: `${SITE_URL}/`,
+        logo: `${SITE_URL}/icon.png`,
+        email: "contact@palbreedhub.com",
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${url}#website`,
+        name: SITE_NAME,
+        url,
+        inLanguage: LOCALE_INFO[locale].hreflang,
+        publisher: organization,
+      },
+      {
+        "@type": "WebApplication",
+        name: `${SITE_NAME} - ${t.home.h1a} ${t.home.h1b}`,
+        url,
+        inLanguage: LOCALE_INFO[locale].hreflang,
+        applicationCategory: "GameApplication",
+        operatingSystem: "Any",
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        description: t.meta.homeDescription,
+        publisher: organization,
+      },
+    ],
   };
   return JSON.stringify(schema).replace(/</g, "\\u003c");
 }
@@ -174,7 +198,7 @@ export default function HomeView({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: webAppJsonLd(locale, t) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: homeJsonLd(locale, t) }} />
 
       <div className="relative overflow-hidden">
         <div className="hero-glow absolute inset-0" aria-hidden="true" />

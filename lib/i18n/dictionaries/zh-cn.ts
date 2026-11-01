@@ -24,6 +24,7 @@ const zhCN: Dictionary = {
     contact: "联系我们",
     privacy: "隐私政策",
     disclaimer: "免责声明",
+    terms: "使用条款",
     findParents: "反查亲代",
     findPal: "搜索帕鲁...",
     jumpLabel: "跳转到帕鲁",
@@ -232,6 +233,7 @@ const zhCN: Dictionary = {
     contact: { title: "联系我们", description: "联系 PalBreedHub 团队。" },
     privacy: { title: "隐私政策", description: "PalBreedHub 如何处理你的数据。" },
     disclaimer: { title: "免责声明", description: "PalBreedHub 是粉丝网站，与 Pocketpair 无关。" },
+    terms: { title: "使用条款", description: "使用 PalBreedHub 及其配种工具的规则。" },
   },
 };
 
