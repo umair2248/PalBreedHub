@@ -229,7 +229,7 @@ const ja: Dictionary = {
   pages: {
     comingSoon: "近日公開",
     about: { title: "このサイトについて", description: "PalBreedHubとは何か、パルワールドのデータの出典について。" },
-    guide: { title: "配合ガイド", description: "パルワールドの配合の仕組み：配合値、特殊配合、コツを解説。" },
+    guide: { title: "配合ガイド", heading: "パルワールド配合ガイド（1.0）：配合の仕組みとおすすめ組み合わせ", description: "パルワールドの配合の仕組み：配合値、特殊配合、コツを解説。" },
     passives: { title: "パッシブスキル", description: "パルワールドの全パッシブスキルと、配合で強いスキルを受け継がせる方法。" },
     tierList: { title: "ティアリスト", description: "パルワールド1.0で戦闘、拠点作業、乗り物に最強のパル。" },
     contact: { title: "お問い合わせ", description: "PalBreedHubチームへのお問い合わせ。" },

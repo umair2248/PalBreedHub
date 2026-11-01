@@ -231,7 +231,7 @@ const ru: Dictionary = {
   pages: {
     comingSoon: "Скоро",
     about: { title: "О сайте", description: "Что такое PalBreedHub и откуда наши данные по Palworld." },
-    guide: { title: "Гайд по разведению", description: "Как работает разведение в Palworld: сила разведения, уникальные комбинации и советы." },
+    guide: { title: "Гайд по разведению", heading: "Гайд по разведению Palworld (1.0): как работает + лучшие комбинации", description: "Как работает разведение в Palworld: сила разведения, уникальные комбинации и советы." },
     passives: {
       title: "Пассивные навыки",
       description: "Все пассивные навыки Palworld и как передать лучшие через разведение.",

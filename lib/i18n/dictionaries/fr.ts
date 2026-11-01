@@ -231,7 +231,7 @@ const fr: Dictionary = {
   pages: {
     comingSoon: "Bientôt disponible",
     about: { title: "À propos", description: "Ce qu'est PalBreedHub et d'où viennent nos données Palworld." },
-    guide: { title: "Guide d'élevage", description: "Comprenez l'élevage dans Palworld : puissance d'élevage, combinaisons uniques et astuces." },
+    guide: { title: "Guide d'élevage", heading: "Guide d'élevage Palworld (1.0) : fonctionnement + meilleures combinaisons", description: "Comprenez l'élevage dans Palworld : puissance d'élevage, combinaisons uniques et astuces." },
     passives: {
       title: "Compétences passives",
       description: "Toutes les compétences passives de Palworld et comment transmettre les meilleures par l'élevage.",

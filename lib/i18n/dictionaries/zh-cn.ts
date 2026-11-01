@@ -227,7 +227,7 @@ const zhCN: Dictionary = {
   pages: {
     comingSoon: "即将推出",
     about: { title: "关于我们", description: "PalBreedHub 是什么，以及我们的幻兽帕鲁数据来源。" },
-    guide: { title: "配种攻略", description: "了解幻兽帕鲁的配种原理：配种值、特殊配种和技巧。" },
+    guide: { title: "配种攻略", heading: "幻兽帕鲁配种攻略（1.0）：配种原理与最佳组合", description: "了解幻兽帕鲁的配种原理：配种值、特殊配种和技巧。" },
     passives: { title: "被动技能", description: "幻兽帕鲁的全部被动技能，以及如何通过配种传承最好的技能。" },
     tierList: { title: "强度排行", description: "幻兽帕鲁 1.0 中最适合战斗、据点工作和坐骑的帕鲁。" },
     contact: { title: "联系我们", description: "联系 PalBreedHub 团队。" },

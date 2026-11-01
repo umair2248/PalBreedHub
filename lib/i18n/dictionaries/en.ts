@@ -243,7 +243,12 @@ const en = {
   pages: {
     comingSoon: "Coming soon",
     about: { title: "About", description: "What PalBreedHub is and where our Palworld data comes from." },
-    guide: { title: "Breeding Guide", description: "Learn how Palworld breeding works: breeding power, unique combos and tips." },
+    guide: {
+      title: "Breeding Guide",
+      heading: "Palworld Breeding Guide (1.0): How Breeding Works + Best Combos",
+      description:
+        "How breeding works in Palworld 1.0: Breeding Farm, Cake, the breeding power formula, unique combos and passive skills, with a free calculator.",
+    },
     passives: {
       title: "Passive Skills",
       description: "Every Palworld passive skill and how to pass the best ones down through breeding.",

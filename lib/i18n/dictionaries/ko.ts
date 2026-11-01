@@ -229,7 +229,7 @@ const ko: Dictionary = {
   pages: {
     comingSoon: "준비 중",
     about: { title: "소개", description: "PalBreedHub 소개와 팰월드 데이터 출처." },
-    guide: { title: "교배 가이드", description: "팰월드 교배 원리: 교배 수치, 특수 조합, 팁." },
+    guide: { title: "교배 가이드", heading: "팰월드 교배 가이드 (1.0): 교배 원리 + 최고의 조합", description: "팰월드 교배 원리: 교배 수치, 특수 조합, 팁." },
     passives: { title: "패시브 스킬", description: "팰월드의 모든 패시브 스킬과 교배로 좋은 스킬을 물려주는 방법." },
     tierList: { title: "티어 리스트", description: "팰월드 1.0에서 전투, 거점 작업, 탈것으로 가장 좋은 팰." },
     contact: { title: "문의", description: "PalBreedHub 팀에 문의하세요." },

@@ -1,7 +1,7 @@
-import InfoView, { infoMetadata } from "@/views/InfoView";
+import GuideView, { guideMetadata } from "@/views/GuideView";
 
-export const metadata = infoMetadata("guide", "en");
+export const metadata = guideMetadata("en");
 
 export default function Page() {
-  return <InfoView page="guide" locale="en" />;
+  return <GuideView locale="en" />;
 }

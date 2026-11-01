@@ -231,7 +231,7 @@ const pt: Dictionary = {
   pages: {
     comingSoon: "Em breve",
     about: { title: "Sobre", description: "O que é o PalBreedHub e de onde vêm nossos dados de Palworld." },
-    guide: { title: "Guia de criação", description: "Entenda a criação em Palworld: poder de criação, combinações únicas e dicas." },
+    guide: { title: "Guia de criação", heading: "Guia de criação de Palworld (1.0): como funciona + melhores combinações", description: "Entenda a criação em Palworld: poder de criação, combinações únicas e dicas." },
     passives: {
       title: "Habilidades passivas",
       description: "Todas as habilidades passivas de Palworld e como passar as melhores adiante pela criação.",

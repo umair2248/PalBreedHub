@@ -232,7 +232,7 @@ const de: Dictionary = {
   pages: {
     comingSoon: "Demnächst",
     about: { title: "Über uns", description: "Was PalBreedHub ist und woher unsere Palworld-Daten stammen." },
-    guide: { title: "Zuchtguide", description: "Lerne, wie die Zucht in Palworld funktioniert: Zuchtkraft, Sonderkombinationen und Tipps." },
+    guide: { title: "Zuchtguide", heading: "Palworld Zuchtguide (1.0): So funktioniert die Zucht + beste Kombos", description: "Lerne, wie die Zucht in Palworld funktioniert: Zuchtkraft, Sonderkombinationen und Tipps." },
     passives: {
       title: "Passive Fähigkeiten",
       description: "Alle passiven Fähigkeiten in Palworld und wie du die besten per Zucht weitergibst.",

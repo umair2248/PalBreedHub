@@ -24,7 +24,7 @@ export function homeMetadata(locale: Locale): Metadata {
   };
 }
 
-function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
+export function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
   return (
     <div className="flex flex-col gap-2">
       <span className="text-xs font-bold uppercase tracking-widest text-accent">{eyebrow}</span>
@@ -34,7 +34,7 @@ function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: stri
   );
 }
 
-function PopularPalCard({ pal, locale, t }: { pal: Pal; locale: Locale; t: Dictionary }) {
+export function PopularPalCard({ pal, locale, t }: { pal: Pal; locale: Locale; t: Dictionary }) {
   const pair = easiestPair(pal);
   return (
     <li>
