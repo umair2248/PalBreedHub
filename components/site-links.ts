@@ -30,4 +30,4 @@ export const footerLinks: SiteLink[] = [
 
 // Google Analytics 4 measurement ID ("G-..."), from GA4 > Admin > Data streams.
 // Leave empty to build the site without analytics.
-export const GA_MEASUREMENT_ID = "";
+export const GA_MEASUREMENT_ID = "G-0KRZ73R1Y4";
