@@ -25,6 +25,7 @@ Palworld 1.0 breeding calculator at https://palbreedhub.com. Next.js App Router 
 
 - Never compute `getParents()` in client components: the first call builds a ~41K-pair index and blocks phones for seconds. Compute on the server and pass small props (see `ParentPairs`).
 - Anything that must survive a deploy on the server (Google/Bing verification files) goes in `public/`; the deploy replaces `public_html` completely.
+- After every deploy, purge the Hostinger CDN (hPanel → Websites → palbreedhub.com → Performance → CDN → Purge all). Otherwise it keeps serving the old brotli-compressed pages to Chrome. Check with `curl -sI -H "Accept-Encoding: br" https://palbreedhub.com/` (look at `last-modified`).
 - Deploys are slow mainly because Windows Defender scans every freshly built file in `out/`; excluding `out` and `.next` from Defender fixes it.
 - `experimental.inlineCss` was tried and made pages slower (CSS was duplicated in the RSC payload); don't re-enable it.
 
