@@ -1,22 +1,28 @@
 "use client";
 
 import { useState } from "react";
-import { compareByEase, getParents, getPal } from "../lib/breeding";
+import { getPal, type Gender, type ParentPair } from "../lib/breeding";
 import { fmt } from "../lib/i18n/config";
 import { useI18n } from "./I18nProvider";
-import PairRow, { orientPair, pairKey } from "./PairRow";
+import PairRow, { pairKey } from "./PairRow";
 
 const INITIAL_COUNT = 20;
 
-/** Parent pairs for a Pal: the 20 easiest are in the page HTML, the rest load on "Show all". */
-export default function ParentPairs({ palId }: { palId: string }) {
+/** A parent pair as [parentA id, parentA gender, parentB id, parentB gender], small enough to send to the browser. */
+export type PairRef = [string, Gender | null, string, Gender | null];
+
+function fromRef([a, aGender, b, bGender]: PairRef): ParentPair {
+  return { parentA: getPal(a)!, parentAGender: aGender, parentB: getPal(b)!, parentBGender: bGender };
+}
+
+/**
+ * Parent pairs for a Pal, already sorted on the server: the 20 easiest are in the page HTML,
+ * the rest show on "Show all". Working the pairs out in the browser would block the page for seconds on phones.
+ */
+export default function ParentPairs({ pairs }: { pairs: PairRef[] }) {
   const { t } = useI18n();
   const [showAll, setShowAll] = useState(false);
-  const pal = getPal(palId)!;
-  const pairs = getParents(pal)
-    .map((p) => orientPair(p, null))
-    .sort(compareByEase);
-  const visible = showAll ? pairs : pairs.slice(0, INITIAL_COUNT);
+  const visible = (showAll ? pairs : pairs.slice(0, INITIAL_COUNT)).map(fromRef);
 
   return (
     <div className="flex flex-col gap-3">

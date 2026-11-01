@@ -150,6 +150,11 @@ body {
 .animate-pop {
   animation: pop-in 0.25s ease-out both;
 }
+/* Below-the-fold blocks: the browser skips their layout and paint until they get near the screen */
+.defer-render {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
 /* Top loading bar during page navigation (components/NavProgress.tsx) */
 .nav-progress {
   position: fixed;

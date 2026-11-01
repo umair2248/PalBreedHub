@@ -83,6 +83,8 @@ function HowItWorks({ t }: { t: Dictionary }) {
         {/* eslint-disable-next-line @next/next/no-img-element -- static export, image is already sized */}
         <img
           src="/img/breeding-flow.webp"
+          srcSet="/img/breeding-flow-480.webp 480w, /img/breeding-flow.webp 720w"
+          sizes="(min-width: 480px) 448px, calc(100vw - 32px)"
           alt=""
           aria-hidden="true"
           width={720}
@@ -242,6 +244,8 @@ export default function HomeView({ locale }: { locale: Locale }) {
             {/* eslint-disable-next-line @next/next/no-img-element -- static export, image is already sized */}
             <img
               src="/img/breeding-pair.webp"
+              srcSet="/img/breeding-pair-480.webp 480w, /img/breeding-pair-600.webp 600w, /img/breeding-pair-720.webp 720w, /img/breeding-pair.webp 960w"
+              sizes="(min-width: 640px) 576px, calc(100vw - 32px)"
               alt=""
               aria-hidden="true"
               width={960}
@@ -279,7 +283,7 @@ export default function HomeView({ locale }: { locale: Locale }) {
           <ReverseCalculator />
         </div>
 
-        <div id="popular" className="flex scroll-mt-32 flex-col gap-5">
+        <div id="popular" className="defer-render flex scroll-mt-32 flex-col gap-5">
           <SectionHeading eyebrow={t.home.popularEyebrow} title={t.home.popularTitle} text={t.home.popularText} />
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {popularPals.map((pal) => (
@@ -292,17 +296,17 @@ export default function HomeView({ locale }: { locale: Locale }) {
           </Link>
         </div>
 
-        <div id="how-it-works" className="flex scroll-mt-32 flex-col gap-5">
+        <div id="how-it-works" className="defer-render flex scroll-mt-32 flex-col gap-5">
           <SectionHeading eyebrow={t.home.howEyebrow} title={t.home.howTitle} text={t.home.howText} />
           <HowItWorks t={t} />
         </div>
 
-        <div id="unique-combos" className="flex scroll-mt-32 flex-col gap-5">
+        <div id="unique-combos" className="defer-render flex scroll-mt-32 flex-col gap-5">
           <SectionHeading eyebrow={t.home.uniqueEyebrow} title={t.home.uniqueTitle} text={t.home.uniqueText} />
           <UniqueComboList />
         </div>
 
-        <div className="border-t border-line pt-16">
+        <div className="defer-render border-t border-line pt-16">
           <PageContent content={content} faqTitle={[t.home.faqTitleA, t.home.faqTitleB]} />
         </div>
 

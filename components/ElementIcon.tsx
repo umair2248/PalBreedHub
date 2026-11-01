@@ -15,10 +15,26 @@ export function elementColor(element: string): string {
   return `var(--el-${element}, var(--muted))`;
 }
 
+/**
+ * Every element glyph once, as <symbol>s that ElementIcon points to. Rendered once per page (in SiteShell),
+ * so pages with hundreds of icons don't repeat the same paths in their HTML.
+ */
+export function ElementSprite() {
+  return (
+    <svg aria-hidden="true" className="hidden">
+      {Object.entries(ELEMENT_PATHS).map(([element, d]) => (
+        <symbol key={element} id={`el-${element}`} viewBox="0 0 24 24">
+          <path d={d} />
+        </symbol>
+      ))}
+    </svg>
+  );
+}
+
 export function ElementIcon({ element, className = "h-3.5 w-3.5" }: { element: string; className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>
-      <path d={ELEMENT_PATHS[element] ?? ELEMENT_PATHS.neutral} />
+    <svg fill="currentColor" aria-hidden="true" className={className}>
+      <use href={`#el-${element in ELEMENT_PATHS ? element : "neutral"}`} />
     </svg>
   );
 }

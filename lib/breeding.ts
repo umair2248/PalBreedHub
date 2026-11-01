@@ -175,6 +175,16 @@ export function compareByEase(a: ParentPair, b: ParentPair): number {
   return rarest(a) - rarest(b) || total(a) - total(b);
 }
 
+/** Puts the given Pal first, otherwise the alphabetically first parent, keeping genders with their Pal. */
+export function orientPair(pair: ParentPair, first: Pal | null): ParentPair {
+  const flip = first
+    ? pair.parentB.id === first.id && pair.parentA.id !== first.id
+    : pair.parentB.name.localeCompare(pair.parentA.name) < 0;
+  return flip
+    ? { parentA: pair.parentB, parentB: pair.parentA, parentAGender: pair.parentBGender, parentBGender: pair.parentAGender }
+    : pair;
+}
+
 export interface Offspring {
   child: Pal;
   /** Partners that produce this child with the given Pal, with gender requirements when they matter */

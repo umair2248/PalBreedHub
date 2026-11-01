@@ -31,6 +31,8 @@ function CtaBand({ locale }: { locale: Locale }) {
         {/* eslint-disable-next-line @next/next/no-img-element -- static export, image is already sized */}
         <img
           src="/img/hatching-egg.webp"
+          srcSet="/img/hatching-egg-384.webp 384w, /img/hatching-egg.webp 640w"
+          sizes="(min-width: 640px) 192px, 144px"
           alt=""
           aria-hidden="true"
           width={640}

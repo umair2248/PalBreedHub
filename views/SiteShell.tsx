@@ -1,3 +1,4 @@
+import { ElementSprite } from "@/components/ElementIcon";
 import { I18nProvider } from "@/components/I18nProvider";
 import NavProgress from "@/components/NavProgress";
 import SiteFooter from "@/components/SiteFooter";
@@ -12,6 +13,7 @@ export default function SiteShell({ locale, children }: { locale: Locale; childr
         // The root layout renders <html lang="en">; correct it for this language before paint
         <script dangerouslySetInnerHTML={{ __html: `document.documentElement.lang=${JSON.stringify(LOCALE_INFO[locale].hreflang)}` }} />
       )}
+      <ElementSprite />
       <NavProgress />
       <SiteHeader locale={locale} />
       <main className="flex flex-1 flex-col">{children}</main>

@@ -53,13 +53,3 @@ export default function PairRow({ pair }: { pair: ParentPair }) {
 export function pairKey(pair: ParentPair): string {
   return `${pair.parentA.id}-${pair.parentAGender}-${pair.parentB.id}-${pair.parentBGender}`;
 }
-
-/** Puts the given Pal first, otherwise the alphabetically first parent, keeping genders with their Pal. */
-export function orientPair(pair: ParentPair, first: Pal | null): ParentPair {
-  const flip = first
-    ? pair.parentB.id === first.id && pair.parentA.id !== first.id
-    : pair.parentB.name.localeCompare(pair.parentA.name) < 0;
-  return flip
-    ? { parentA: pair.parentB, parentB: pair.parentA, parentAGender: pair.parentBGender, parentBGender: pair.parentAGender }
-    : pair;
-}

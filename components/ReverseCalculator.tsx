@@ -1,12 +1,12 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { canBreed, compareByEase, getParents, pals, type Pal, type ParentPair } from "../lib/breeding";
+import { canBreed, compareByEase, getParents, orientPair, pals, type Pal, type ParentPair } from "../lib/breeding";
 import { fmt } from "../lib/i18n/config";
 import ArrowIcon from "./ArrowIcon";
 import { ElementBadges } from "./ElementBadge";
 import { useI18n } from "./I18nProvider";
-import PairRow, { orientPair, pairKey } from "./PairRow";
+import PairRow, { pairKey } from "./PairRow";
 import PalAvatar from "./PalAvatar";
 import PalSelect from "./PalSelect";
 import RarityBadge from "./RarityBadge";
