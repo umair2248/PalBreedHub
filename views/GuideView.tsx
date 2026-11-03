@@ -91,6 +91,14 @@ export default function GuideView({ locale }: { locale: Locale }) {
 
       <PageContent content={secondHalf} faqTitle={faqTitle} />
 
+      <Link
+        href={href("/breeding-combos/")}
+        className="group mx-auto flex w-full max-w-3xl items-center justify-between gap-4 rounded-2xl border border-line bg-surface p-5 font-bold transition hover:border-accent hover:text-accent"
+      >
+        {t.bestCombos.guideLink}
+        <ArrowIcon />
+      </Link>
+
       <section className="defer-render mx-auto flex w-full max-w-6xl flex-col gap-5">
         <SectionHeading eyebrow={t.home.popularEyebrow} title={t.home.popularTitle} text={t.home.popularText} />
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">

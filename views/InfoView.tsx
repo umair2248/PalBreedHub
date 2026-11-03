@@ -12,6 +12,7 @@ export type InfoPage = keyof Omit<Dictionary["pages"], "comingSoon">;
 export const INFO_PATHS: Record<InfoPage, string> = {
   about: "/about/",
   guide: "/breeding-guide/",
+  combos: "/breeding-combos/",
   passives: "/passive-skills/",
   tierList: "/tier-list/",
   contact: "/contact/",
