@@ -8,10 +8,12 @@ import { getBestCombos, type ComboEntry } from "@/lib/best-combos";
 import type { Gender, Pal } from "@/lib/breeding";
 import { faqJsonLd, loadPageContent } from "@/lib/content";
 import { fmt, getDictionary, localePath, type Dictionary, type Locale } from "@/lib/i18n";
+import { popularPals } from "@/lib/popular";
 import { breadcrumbJsonLd, pageAlternates } from "@/lib/seo";
-import { SectionHeading } from "./HomeView";
+import { PopularPalCard, SectionHeading } from "./HomeView";
 
 const PATH = "/breeding-combos/";
+const POPULAR_COUNT = 10;
 const GENDER_SIGN: Record<Gender, string> = { male: "♂", female: "♀" };
 
 export function combosMetadata(locale: Locale): Metadata {
@@ -175,6 +177,15 @@ export default function CombosView({ locale }: { locale: Locale }) {
           </ul>
         </section>
       ))}
+
+      <section className="defer-render mx-auto flex w-full max-w-6xl flex-col gap-5">
+        <SectionHeading eyebrow={t.home.popularEyebrow} title={t.home.popularTitle} text={t.home.popularText} />
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {popularPals.slice(0, POPULAR_COUNT).map((pal) => (
+            <PopularPalCard key={pal.id} pal={pal} locale={locale} t={t} />
+          ))}
+        </ul>
+      </section>
 
       <section className="mx-auto flex w-full max-w-3xl flex-col items-start gap-3 rounded-2xl border border-line bg-surface p-6">
         <h2 className="text-xl font-black tracking-tight">{b.ctaTitle}</h2>

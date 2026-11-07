@@ -177,6 +177,27 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
         </ul>
       </section>
 
+      <nav aria-label={t.pal.learnMore} className="flex flex-col gap-3">
+        <h2 className="text-2xl font-black tracking-tight">{t.pal.learnMore}</h2>
+        <ul className="grid gap-3 sm:grid-cols-3">
+          {[
+            { path: "/#calculator", label: t.nav.calculator },
+            { path: "/breeding-guide/", label: t.nav.guide },
+            { path: "/breeding-combos/", label: t.nav.combos },
+          ].map((item) => (
+            <li key={item.path}>
+              <Link
+                href={href(item.path)}
+                className="group flex h-full items-center justify-between gap-3 rounded-2xl border border-line bg-surface p-4 font-semibold transition hover:border-accent hover:text-accent"
+              >
+                {item.label}
+                <ArrowIcon />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
       <Link
         href={href("/#reverse")}
         className="btn-primary group flex w-fit items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold shadow-lg hover:opacity-90"

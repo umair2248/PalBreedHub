@@ -13,7 +13,8 @@
     "data:pals": "node scripts/build-pals-data.mjs",
     "data:combos": "node scripts/build-unique-combos.mjs",
     "data:sample": "node scripts/sample-pals.mjs",
-    "validate:data": "node scripts/validate-pals.mjs"
+    "validate:data": "node scripts/validate-pals.mjs",
+    "check:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "@next/third-parties": "16.4.3",

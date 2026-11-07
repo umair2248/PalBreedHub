@@ -64,3 +64,16 @@ describe("translated home content", () => {
     expect(translated.faq.every((item) => item.answerText.length > 0)).toBe(true);
   });
 });
+
+describe("loadPageContent links", () => {
+  it("prefixes site links in English fallback content with the locale", () => {
+    const html = loadPageContent("breeding-guide", "de").sections.map((s) => s.html).join("");
+    expect(html).toContain('href="/de/pals/"');
+    expect(html).not.toMatch(/href="\/pals\//);
+  });
+
+  it("keeps English links unchanged", () => {
+    const html = loadPageContent("breeding-guide").sections.map((s) => s.html).join("");
+    expect(html).toContain('href="/pals/"');
+  });
+});

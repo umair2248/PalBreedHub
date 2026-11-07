@@ -6,6 +6,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
+import { DEFAULT_LOCALE, isLocale, localePath, type Locale } from "./i18n/config";
 
 export interface ContentSection {
   heading: string;
@@ -82,8 +83,19 @@ export function hasPageContent(name: string): boolean {
 export function loadPageContent(name: string, locale = "en"): PageContent {
   const dir = path.join(process.cwd(), "content");
   const localized = path.join(dir, `${name}.${locale}.md`);
-  const file = locale !== "en" && existsSync(localized) ? localized : path.join(dir, `${name}.md`);
-  return parsePageContent(readFileSync(file, "utf8"));
+  if (locale !== "en" && existsSync(localized)) return parsePageContent(readFileSync(localized, "utf8"));
+  const content = parsePageContent(readFileSync(path.join(dir, `${name}.md`), "utf8"));
+  return isLocale(locale) ? localizeLinks(content, locale) : content;
+}
+
+/** Points the site links in English fallback content ("/pals/") at the given language ("/de/pals/"). */
+function localizeLinks(content: PageContent, locale: Locale): PageContent {
+  if (locale === DEFAULT_LOCALE) return content;
+  const fix = (html: string) => html.replace(/href="(\/(?!\/)[^"]*)"/g, (_, href: string) => `href="${localePath(locale, href)}"`);
+  return {
+    sections: content.sections.map((s) => ({ ...s, html: fix(s.html) })),
+    faq: content.faq.map((f) => ({ ...f, answerHtml: fix(f.answerHtml) })),
+  };
 }
 
 /** FAQPage structured data for Google rich results. */
