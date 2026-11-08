@@ -112,3 +112,23 @@ export function faqJsonLd(faq: FaqItem[]): string {
   // Escape "<" so answer text can never close the <script> tag
   return JSON.stringify(schema).replace(/</g, "\\u003c");
 }
+
+export interface PalContent extends PageContent {
+  /** Text before the first "## " heading; replaces the generated intro when present */
+  introHtml: string | null;
+}
+
+/**
+ * Hand-written text for one Pal: content/pals/{slug}.md for English, content/pals/{slug}.{locale}.md for
+ * other languages. There is no English fallback, because the generated text around it is translated.
+ */
+export function loadPalContent(slug: string, locale = "en"): PalContent | null {
+  const file = path.join(process.cwd(), "content", "pals", locale === "en" ? `${slug}.md` : `${slug}.${locale}.md`);
+  if (!existsSync(file)) return null;
+  return parsePalContent(readFileSync(file, "utf8"));
+}
+
+export function parsePalContent(markdown: string): PalContent {
+  const lead = markdown.replace(/<!--[\s\S]*?-->/g, "").split(/^## /m)[0].trim();
+  return { ...parsePageContent(markdown), introHtml: lead ? marked.parse(lead, { async: false }) : null };
+}

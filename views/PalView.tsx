@@ -5,12 +5,16 @@ import ArrowIcon from "@/components/ArrowIcon";
 import { ElementBadges } from "@/components/ElementBadge";
 import PalAvatar from "@/components/PalAvatar";
 import PalCard from "@/components/PalCard";
+import PageContent from "@/components/PageContent";
 import { PalName } from "@/components/PairRow";
 import ParentPairs, { type PairRef } from "@/components/ParentPairs";
 import RarityBadge from "@/components/RarityBadge";
 import { canBreed, compareByEase, getOffspring, getPal, getParents, orientPair, pals, type Pal } from "@/lib/breeding";
+import { faqJsonLd, loadPalContent } from "@/lib/content";
 import { fmt, getDictionary, localePath, type Dictionary, type Locale } from "@/lib/i18n";
 import { paldeckCode } from "@/lib/labels";
+import { buildPalProfile } from "@/lib/pal-profile";
+import { easiestPair } from "@/lib/popular";
 import { breadcrumbJsonLd, pageAlternates, palDescription, palTitle } from "@/lib/seo";
 
 const PARTNERS_SHOWN = 3;
@@ -56,6 +60,10 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
   const pairCount = pairs.length;
   const offspring = getOffspring(pal);
   const related = getRelatedPals(pal);
+  const easiest = easiestPair(pal);
+  const profile = buildPalProfile({ pal, pairCount, easiest, offspringCount: offspring.length }, t, locale);
+  const custom = loadPalContent(pal.slug, locale);
+  const faqTitle: [string, string] = [t.home.faqTitleA, t.home.faqTitleB];
   const work = Object.entries(pal.workSuitability);
   const crumbs = [
     { name: t.pal.home, path: href("/") },
@@ -66,6 +74,9 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
   return (
     <article className="mx-auto flex w-full max-w-4xl flex-col gap-10 px-4 py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd(crumbs) }} />
+      {custom && custom.faq.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqJsonLd(custom.faq) }} />
+      )}
 
       <div className="flex flex-col gap-4">
         <nav aria-label={t.pal.breadcrumb} className="text-sm text-muted">
@@ -102,18 +113,38 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
           </div>
         </div>
 
-        <dl className="grid grid-cols-3 gap-3">
-          {[
-            [t.pal.breedingPower, pal.breedingPower],
-            [t.pal.rarity, pal.rarity],
-            [t.pal.parentPairs, pairCount],
-          ].map(([label, value]) => (
-            <div key={label} className="rounded-2xl border border-line bg-surface p-3 sm:p-4">
-              <dt className="text-xs text-muted">{label}</dt>
-              <dd className="text-gradient text-2xl font-black">{value}</dd>
+        <div className="grid gap-6 lg:grid-cols-[3fr_2fr]">
+          <section id="about" className="flex scroll-mt-32 flex-col gap-3">
+            <h2 className="text-2xl font-black tracking-tight">{fmt(t.pal.aboutTitle, { name: pal.name })}</h2>
+            {custom?.introHtml ? (
+              <div className="rich-text text-muted" dangerouslySetInnerHTML={{ __html: custom.introHtml }} />
+            ) : (
+              profile.paragraphs.map((text) => (
+                <p key={text} className="text-muted">
+                  {text}
+                </p>
+              ))
+            )}
+          </section>
+
+          <section id="quick-facts" className="flex scroll-mt-32 flex-col gap-3">
+            <h2 className="text-2xl font-black tracking-tight">{t.pal.factsTitle}</h2>
+            <div className="overflow-hidden rounded-2xl border border-line bg-surface">
+              <table className="w-full text-sm">
+                <tbody className="divide-y divide-line">
+                  {profile.facts.map((fact) => (
+                    <tr key={fact.label}>
+                      <th scope="row" className="w-2/5 px-4 py-2.5 text-left font-medium text-muted">
+                        {fact.label}
+                      </th>
+                      <td className="px-4 py-2.5 font-semibold">{fact.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-          ))}
-        </dl>
+          </section>
+        </div>
 
         {work.length > 0 && (
           <div className="flex flex-col gap-2">
@@ -133,8 +164,28 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
       <section id="how-to-breed" className="flex scroll-mt-32 flex-col gap-3">
         <h2 className="text-2xl font-black tracking-tight">{fmt(t.pal.howTitle, { name: pal.name })}</h2>
         <p className="text-muted">{howToBreedIntro(pal, pairCount, t)}</p>
+        {canBreed(pal) && pairCount > 0 && (
+          <div className="flex flex-col gap-3 rounded-2xl border border-accent/60 bg-accent-soft p-4 sm:p-5" data-testid="easiest-pair">
+            <h3 className="text-lg font-bold">{fmt(t.pal.easiestTitle, { name: pal.name })}</h3>
+            <div className="grid gap-2 sm:grid-cols-[1fr_auto_1fr] sm:items-center sm:gap-4">
+              <PalName pal={easiest?.parentA ?? pal} gender={easiest?.parentAGender ?? null} />
+              <span
+                className="flex h-7 w-7 items-center justify-center rounded-full border border-line text-sm font-bold text-muted max-sm:ml-3"
+                aria-hidden="true"
+              >
+                +
+              </span>
+              <PalName pal={easiest?.parentB ?? pal} gender={easiest?.parentBGender ?? null} />
+            </div>
+            <p className="text-sm text-muted">
+              {easiest ? fmt(t.pal.easiestText, { count: pairCount }) : fmt(t.pal.easiestSelf, { name: pal.name })}
+            </p>
+          </div>
+        )}
         {pairCount > 0 && <ParentPairs pairs={pairs} />}
       </section>
+
+      {custom && custom.sections.length > 0 && <PageContent content={{ sections: custom.sections, faq: [] }} faqTitle={faqTitle} />}
 
       {offspring.length > 0 && (
         <section id="what-it-breeds" className="defer-render flex scroll-mt-32 flex-col gap-3">
@@ -165,6 +216,8 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
           </ul>
         </section>
       )}
+
+      {custom && custom.faq.length > 0 && <PageContent content={{ sections: [], faq: custom.faq }} faqTitle={faqTitle} />}
 
       <section className="flex flex-col gap-3">
         <h2 className="text-2xl font-black tracking-tight">{t.pal.related}</h2>

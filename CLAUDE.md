@@ -20,6 +20,7 @@ Palworld 1.0 breeding calculator at https://palbreedhub.com. Next.js App Router 
 - `components/` – UI; `components/site-links.ts` holds the site URL, nav/footer links and the GA4 ID
 - `lib/breeding.ts` – breeding logic (formula, unique combos, parent index); `lib/i18n/dictionaries/*.ts` – UI strings for all 11 languages (add every new key to all of them)
 - `content/*.md` – page text; `## Heading` sections, `## FAQ` with `### Question` items (rendered with FAQPage schema). `content/{name}.{locale}.md` overrides a language.
+- `lib/pal-profile.ts` – generated intro + Quick facts for every Pal page; `content/pals/{slug}.md` (and `{slug}.{locale}.md`) adds optional hand-written text, see `content/pals/README.md`
 - `data/pals.json`, `data/unique-combos.json` – game data from MIT-licensed community datasets (sources on the About page)
 
 ## Notes
@@ -33,4 +34,4 @@ Palworld 1.0 breeding calculator at https://palbreedhub.com. Next.js App Router 
 
 ## Progress
 
-The owner follows a 60-day daily plan. Days 1–21 are done (setup, data, calculators, Pal pages, layout, i18n, legal pages incl. Terms, technical SEO, GA4, speed fixes, Breeding Guide, Breeding Combos page, internal linking review). Next: Day 22.
+The owner follows a 60-day daily plan. Days 1–21 are done (setup, data, calculators, Pal pages, layout, i18n, legal pages incl. Terms, technical SEO, GA4, speed fixes, Breeding Guide, Breeding Combos page, internal linking review, unique Pal page content). Next: Day 23.
