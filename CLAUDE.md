@@ -34,4 +34,4 @@ Palworld 1.0 breeding calculator at https://palbreedhub.com. Next.js App Router 
 
 ## Progress
 
-The owner follows a 60-day daily plan. Days 1–22 are done (setup, data, calculators, Pal pages, layout, i18n, legal pages incl. Terms, technical SEO, GA4, speed fixes, Breeding Guide, Breeding Combos page, internal linking review, unique Pal page content). Next: Day 23.
+The owner follows a 60-day daily plan. Days 1–23 are done (setup, data, calculators, Pal pages, layout, i18n, legal pages incl. Terms, technical SEO, GA4, speed fixes, Breeding Guide, Breeding Combos page, internal linking review, unique Pal page content, hand-written content for the top 10 Pals). Next: Day 24.

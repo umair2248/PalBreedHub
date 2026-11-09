@@ -114,7 +114,7 @@ export function faqJsonLd(faq: FaqItem[]): string {
 }
 
 export interface PalContent extends PageContent {
-  /** Text before the first "## " heading; replaces the generated intro when present */
+  /** Text before the first "## " heading; shown above the generated intro when present */
   introHtml: string | null;
 }
 

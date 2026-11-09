@@ -116,15 +116,15 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
         <div className="grid gap-6 lg:grid-cols-[3fr_2fr]">
           <section id="about" className="flex scroll-mt-32 flex-col gap-3">
             <h2 className="text-2xl font-black tracking-tight">{fmt(t.pal.aboutTitle, { name: pal.name })}</h2>
-            {custom?.introHtml ? (
-              <div className="rich-text text-muted" dangerouslySetInnerHTML={{ __html: custom.introHtml }} />
-            ) : (
-              profile.paragraphs.map((text) => (
-                <p key={text} className="text-muted">
-                  {text}
-                </p>
-              ))
+            {/* Hand-written intro comes first; the generated paragraphs stay below it */}
+            {custom?.introHtml && (
+              <div className="rich-text text-muted" data-testid="custom-intro" dangerouslySetInnerHTML={{ __html: custom.introHtml }} />
             )}
+            {profile.paragraphs.map((text) => (
+              <p key={text} className="text-muted">
+                {text}
+              </p>
+            ))}
           </section>
 
           <section id="quick-facts" className="flex scroll-mt-32 flex-col gap-3">
@@ -161,6 +161,9 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
         )}
       </div>
 
+      {/* Hand-written sections sit above the generated breeding lists */}
+      {custom && custom.sections.length > 0 && <PageContent content={{ sections: custom.sections, faq: [] }} faqTitle={faqTitle} />}
+
       <section id="how-to-breed" className="flex scroll-mt-32 flex-col gap-3">
         <h2 className="text-2xl font-black tracking-tight">{fmt(t.pal.howTitle, { name: pal.name })}</h2>
         <p className="text-muted">{howToBreedIntro(pal, pairCount, t)}</p>
@@ -184,8 +187,6 @@ export default function PalView({ slug, locale }: { slug: string; locale: Locale
         )}
         {pairCount > 0 && <ParentPairs pairs={pairs} />}
       </section>
-
-      {custom && custom.sections.length > 0 && <PageContent content={{ sections: custom.sections, faq: [] }} faqTitle={faqTitle} />}
 
       {offspring.length > 0 && (
         <section id="what-it-breeds" className="defer-render flex scroll-mt-32 flex-col gap-3">

@@ -8,8 +8,8 @@ File names
   A language without its own file keeps the generated text (English is not used as a fallback).
 
 What goes where
-  Text before the first "## " heading   replaces the generated "About {name}" intro
-  "## Heading" sections                 show below the intro and Quick facts
+  Text before the first "## " heading   shows at the top of "About {name}", above the generated intro
+  "## Heading" sections                 show below the intro and Quick facts, above "How to breed"
   "## FAQ" with "### Question" items    shows near the end of the page, with FAQ schema for Google
 
 Example (content/pals/anubis.md):
