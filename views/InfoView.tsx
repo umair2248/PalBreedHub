@@ -13,6 +13,8 @@ export const INFO_PATHS: Record<InfoPage, string> = {
   about: "/about/",
   guide: "/breeding-guide/",
   combos: "/breeding-combos/",
+  chart: "/breeding-chart/",
+  path: "/breeding-path/",
   passives: "/passive-skills/",
   tierList: "/tier-list/",
   contact: "/contact/",

@@ -17,6 +17,8 @@ export const mainLinks: SiteLink[] = [
   { href: "/pals/", key: "pals" },
   { href: "/breeding-guide/", key: "guide" },
   { href: "/breeding-combos/", key: "combos" },
+  { href: "/breeding-chart/", key: "chart" },
+  { href: "/breeding-path/", key: "path" },
   { href: "/passive-skills/", key: "passives" },
   { href: "/tier-list/", key: "tierList" },
 ];

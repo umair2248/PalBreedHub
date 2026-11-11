@@ -49,6 +49,15 @@ const palById = new Map(pals.map((p) => [p.id, p]));
 const palBySlug = new Map(pals.map((p) => [p.slug, p]));
 const notBreedable = new Set(combosData.notBreedable);
 
+const pairKey = (a: string, b: string) => (a < b ? `${a}|${b}` : `${b}|${a}`);
+
+// Unique combos by unordered parent pair, so lookups stay cheap when checking every pair
+const combosByPair = new Map<string, UniqueCombo[]>();
+for (const c of combos) {
+  const key = pairKey(c.parentA, c.parentB);
+  combosByPair.set(key, [...(combosByPair.get(key) ?? []), c]);
+}
+
 // Pals the breeding-power formula is never allowed to return
 const formulaExcluded = new Set([...combos.map((c) => c.child), ...combosData.selfBreedOnly, ...notBreedable]);
 
@@ -72,7 +81,7 @@ function genderMatches(required: Gender | null, actual: Gender | undefined): boo
 }
 
 function findUniqueCombo(a: Pal, b: Pal, genders: ParentGenders): UniqueCombo | undefined {
-  return combos.find(
+  return combosByPair.get(pairKey(a.id, b.id))?.find(
     (c) =>
       (c.parentA === a.id &&
         c.parentB === b.id &&
@@ -87,7 +96,7 @@ function findUniqueCombo(a: Pal, b: Pal, genders: ParentGenders): UniqueCombo | 
 
 /** True when this pair has a fixed unique-combo result instead of the breeding-power formula. */
 export function isUniqueCombo(a: Pal, b: Pal): boolean {
-  return combos.some((c) => (c.parentA === a.id && c.parentB === b.id) || (c.parentA === b.id && c.parentB === a.id));
+  return combosByPair.has(pairKey(a.id, b.id));
 }
 
 /** Every unique combo as Pals, for showcase lists. */
@@ -142,12 +151,8 @@ export function getChild(parentA: Pal, parentB: Pal, genders: ParentGenders = {}
 
 /** Every possible child of two parents, with the genders needed when the result depends on them. */
 export function getChildOutcomes(parentA: Pal, parentB: Pal): BreedingOutcome[] {
-  const genderDependent = combos.some(
-    (c) =>
-      (c.parentAGender || c.parentBGender) &&
-      ((c.parentA === parentA.id && c.parentB === parentB.id) ||
-        (c.parentA === parentB.id && c.parentB === parentA.id)),
-  );
+  const genderDependent =
+    combosByPair.get(pairKey(parentA.id, parentB.id))?.some((c) => c.parentAGender || c.parentBGender) ?? false;
 
   if (!genderDependent) {
     const child = getChild(parentA, parentB);

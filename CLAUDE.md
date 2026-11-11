@@ -30,8 +30,10 @@ Palworld 1.0 breeding calculator at https://palbreedhub.com. Next.js App Router 
 - After every deploy, purge the Hostinger CDN (hPanel → Websites → palbreedhub.com → Performance → CDN → Purge all). Otherwise it keeps serving the old brotli-compressed pages to Chrome. Check with `curl -sI -H "Accept-Encoding: br" https://palbreedhub.com/` (look at `last-modified`).
 - The build needs ~4 GB free on C: (`out/` alone is ~2.6 GB). `ENOSPC` or a build that hangs means the disk is full; `npm cache clean --force` frees a few GB.
 - Deploys are slow mainly because Windows Defender scans every freshly built file in `out/`; excluding `out` and `.next` from Defender fixes it.
+- Run `npm test` from a shell whose working directory is `C:devPalBreedHub` (capital C). From `c:...` (lowercase, e.g. Git Bash `/c/dev`) every test file fails with "failed to find the current suite" / "reading 'config'".
+- `lib/breeding-path.ts` (BFS over generations) and `components/BreedingChart.tsx` (virtualized grid) call `getChildOutcomes` on the client; that's cheap because unique combos are indexed by pair. Still never call `getParents()` there.
 - `experimental.inlineCss` was tried and made pages slower (CSS was duplicated in the RSC payload); don't re-enable it.
 
 ## Progress
 
-The owner follows a 60-day daily plan. Days 1–23 are done (setup, data, calculators, Pal pages, layout, i18n, legal pages incl. Terms, technical SEO, GA4, speed fixes, Breeding Guide, Breeding Combos page, internal linking review, unique Pal page content, hand-written content for the top 10 Pals). Next: Day 24.
+The owner follows a 60-day daily plan. Days 1–23 are done (setup, data, calculators, Pal pages, layout, i18n, legal pages incl. Terms, technical SEO, GA4, speed fixes, Breeding Guide, Breeding Combos page, internal linking review, unique Pal page content, hand-written content for the top 10 Pals, content for 10 more Pals, Breeding Chart, Breeding Path Finder). Next: Day 27.
